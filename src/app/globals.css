@@ -3,25 +3,77 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    padding: 0;
+    margin: 0;
+    /* variables */
+    --primary-color: #3f67f3;
+    /* scroll bar */
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@layer base {
+    body {
+        font-family: sans-serif;
+    }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    h1 { @apply text-2xl font-bold ; }
+    h2 { @apply text-xl font-bold ; }
+    h3 { @apply text-lg font-bold ; }
+    h4 { @apply text-base font-bold ; }
+    h5 { @apply text-sm font-bold ; }
+    h6 { @apply text-xs font-bold ; }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .container {
+        @apply mx-auto;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply bg-primary-color text-white;
+    }
+}
+
+/* HEADER */
+header {
+    position: relative;
+    @apply bg-[#fdf7ec];
+    &::after {
+        content: '';
+        @apply absolute w-full h-full blur -z-10 ;
+    }
+}
+
+.navbar {
+    ul > li a {
+        @apply font-bold text-lg;
+        &:hover {
+            @apply text-primary transition duration-100;
+        };
+        
+        &.active {
+            @apply text-primary;
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    @apply relative;
+    @apply bg-black/20;
+
+    &::before {
+        content: '';
+        @apply absolute -z-10 inset-0;
+        background: url("/assets/images/footer_bg.png") no-repeat;
+        background-size: cover;
+    }
+}
+
+footer .links a {
+    @apply rounded-full border border-white p-1;
 }

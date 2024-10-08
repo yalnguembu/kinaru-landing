@@ -8,9 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'up-down': {
+          'from': { transform: 'translateY(-100px)' },
+          'to': { transform: 'translateY(0px)' }
+        }
+      },
+      animation: {
+        'up-down': 'up-down 500ms linear'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary-color)",
       },
     },
   },
