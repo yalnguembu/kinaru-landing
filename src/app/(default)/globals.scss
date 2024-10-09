@@ -28,6 +28,16 @@
     input, select, textarea {
         @apply border p-3 rounded-lg text-lg bg-gray-600/70;
     }
+    /* TABLES */
+    table.table-horizontal tbody {
+        @apply flex flex-col;
+    }
+    table.table-horizontal tr {
+        @apply border-b flex w-full items-center justify-between text-left p-3;
+    }
+    table.table-horizontal tr td, table tr th {
+        @apply min-w-[150px];
+    }
 }
 
 @layer utilities {
@@ -40,12 +50,27 @@
     .btn-primary-rounded {
         @apply bg-primary text-white text-base rounded-xl w-fit px-3 py-1;
     }
+
+    .btn-action {
+        @apply btn-primary-rounded px-5 py-2 rounded-3xl font-semibold relative transition-all duration-300;
+        transform: translate(-0.25rem, -0.25rem);
+
+        &::after {
+            content: '';
+            @apply inset-1 w-full h-full border border-primary absolute -z-10 rounded-3xl transition-all duration-300;
+        }
+    }
+    .btn-action:hover {
+        @apply translate-x-0 translate-y-0;
+        &::after {
+            @apply inset-0;
+        }
+    }
 }
 
 /* HEADER */
 header {
-    position: relative;
-    @apply bg-[#fdf7ec];
+    @apply bg-[#fdf7ec] relative;
     &::after {
         content: '';
         @apply absolute w-full h-full blur -z-10 ;
@@ -57,8 +82,8 @@ header {
         @apply font-bold text-lg;
         &:hover {
             @apply text-primary transition duration-100;
-        };
-        
+        }
+
         &.active {
             @apply text-primary;
         }

@@ -1,7 +1,7 @@
 'use client'
 
 import Stars from "@/components/Ui/Stars";
-import {fetchReviews} from "@/app/reviews/actions";
+import {fetchReviews} from "@/app/(default)/reviews/actions";
 import SingleReview from "@/components/Ui/SingleReview";
 import {Review} from "@/types";
 import {useEffect, useState} from "react";
