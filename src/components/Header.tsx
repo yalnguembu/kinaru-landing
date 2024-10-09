@@ -9,7 +9,7 @@ export default function Header()
     const {scrolled} = useScrollDetection()
 
     return (
-        <header className={`h-[110px] z-10 w-screen flex shadow shadow-gray-400 ${scrolled ? 'fixed top-0 animate-up-down' : ''}`}>
+        <header className={`h-[110px] fixed top-0 z-10 w-full flex shadow shadow-gray-400 ${scrolled ? ' animate-up-down' : ''}`}>
             <div className="container flex justify-between items-center">
                 <h1><Image src="/assets/images/logos/png/logo-long.png" alt="logo" width={250} height={50} /></h1>
                 <Navbar />

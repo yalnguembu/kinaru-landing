@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="fr">
         <body className={`${manrope.className} bg-[#fdf7ec]`}>
             <Header/>
-            <main className="min-h-screen">
+            <main className="min-h-screen mt-36">
               {children}
             </main>
             <GoToUp />
