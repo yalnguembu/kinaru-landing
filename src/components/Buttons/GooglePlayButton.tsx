@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GetAppStoreButton from "@/components/Buttons/GetAppStoreButton";
 
 export type GooglePlayButtonProps = {

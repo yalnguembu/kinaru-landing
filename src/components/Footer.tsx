@@ -6,9 +6,9 @@ export default function Footer()
 {
     return (
         <footer className="text-white mt-20">
-            <div className="container flex flex-col gap-5 py-10">
+            <div className="container flex flex-col gap-10 py-20">
                 <div className="flex justify-between items-start">
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-5">
                         <h2>Subscribe newsletter</h2>
                         <p>Be the first to receive all latest post in your inbox</p>
                         <form action="#" method="GET">

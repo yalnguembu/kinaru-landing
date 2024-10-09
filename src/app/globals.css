@@ -65,10 +65,18 @@ header {
     }
 }
 
-/* FOOTER */
-footer, #contact-form {
+/* ADS SECTIONS */
+.ads-phone {
     @apply relative;
-    @apply bg-black/20;
+    &::before {
+        content: '';
+        @apply absolute w-full h-[80%] bg-primary rounded-2xl -rotate-12 -z-10 top-[20%];
+    }
+}
+
+/* FOOTER */
+footer, #contact-form, .ads-container {
+    @apply relative bg-black/20 overflow-hidden;
 
     &::before {
         content: '';

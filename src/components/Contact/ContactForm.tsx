@@ -6,7 +6,7 @@ import {ContactSchema} from "@/types/schemas";
 
 export default function ContactForm()
 {
-    const {register, reset, handleSubmit, formState: {errors}} = useForm({
+    const {register, reset, handleSubmit} = useForm({
         resolver: yupResolver(ContactSchema)
     })
 
