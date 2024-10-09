@@ -48,7 +48,7 @@
 
 @layer components {
     .btn-primary-rounded {
-        @apply bg-primary text-white text-base rounded-xl w-fit px-3 py-1;
+        @apply bg-primary text-white text-base rounded-2xl w-fit px-3 py-1;
     }
 
     .btn-action {
@@ -79,7 +79,7 @@ header {
 
 .navbar {
     ul > li a {
-        @apply font-bold text-lg;
+        @apply font-bold text-base;
         &:hover {
             @apply text-primary transition duration-100;
         }

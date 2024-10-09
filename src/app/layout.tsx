@@ -1,4 +1,5 @@
 import {PropsWithChildren} from "react";
+import './globals.scss'
 
 export default function Layout({children}: PropsWithChildren)
 {
