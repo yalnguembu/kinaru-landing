@@ -1,5 +1,15 @@
 import {User} from "@/types";
 
+export const firstCarouselImages: string[] = [
+    '/assets/images/about/abtslide_2.png',
+    '/assets/images/about/abtslide_1.png',
+    '/assets/images/about/abtslide_2.png',
+    '/assets/images/about/abtslide_3.png',
+    '/assets/images/about/abtslide_4.png',
+    '/assets/images/about/abtslide_5.png',
+    '/assets/images/about/abtslide_4.png',
+]
+
 export const statsValues = [
     {number: 2300, start: 1500, time:10, step: 3, name: 'Reviews', letter: '+'},
     {number: 150, step: 3, name: 'Countries', letter: '+'},

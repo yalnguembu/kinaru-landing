@@ -1,4 +1,10 @@
 
+#about {
+  section {
+    @apply container mx-auto;
+  }
+}
+
 .teams .teams__user
 {
   @apply p-3 rounded-xl;

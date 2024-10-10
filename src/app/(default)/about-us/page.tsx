@@ -6,30 +6,57 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Autoplay, Pagination} from "swiper/modules";
 import {FaFacebookF, FaGear, FaInstagram, FaMessage, FaTwitter} from "react-icons/fa6";
 import {cn} from "@/libs/utils";
-import {sponsors, statsValues, teams, userRates, valuesItem} from "@/app/(default)/about-us/data";
+import {firstCarouselImages, sponsors, statsValues, teams, userRates, valuesItem} from "@/app/(default)/about-us/data";
 import Image from "next/image";
 import Stars from "@/components/Ui/Stars";
 
 import './about.scss'
-import ReactOwlCarousel from "react-owl-carousel";
 import {FaCheckCircle} from "react-icons/fa";
 
 export default function About() {
   return (
-      <div className="container flex flex-col gap-10 my-10">
-        <section className="text-center flex flex-col items-center gap-3">
+      <div id="about" className="flex flex-col gap-10 my-10">
+          {/* ABOUT */}
+          <section className="text-center flex flex-col items-center gap-3">
             <span className="btn-primary-rounded">About us</span>
             <h2 className="text-3xl">We are app agency <br/> <span className="text-primary">building high level of smart app</span></h2>
             <p className="max-w-[500px]">Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard dummy text ever since.</p>
-            <div>
-                <span>CAROUSEL PLACEHOLDER</span>
+          </section>
+
+            <div className="max-w-full">
+                <Swiper
+                    loop
+                    modules={[Autoplay]}
+                    slidesPerView={'auto'}
+                    autoplay={{waitForTransition: true, delay:1500}}
+                    grabCursor={true}
+                    className="w-fit mx-auto"
+                >
+                    {firstCarouselImages.map((image, index) => {
+                        return (
+                            <SwiperSlide key={index} className="mr-5 w-fit">
+                                <Image
+                                    src={image}
+                                    alt={'slide-' + index}
+                                    width={480}
+                                    height={350}
+                                    className="w-auto h-[350px] rounded-2xl"
+                                />
+                            </SwiperSlide>
+                        )
+                    })}
+                </Swiper>
             </div>
-            <div className="max-w-[500px] text-center">
-                <h3 className="text-3xl"><span className="text-primary">Our story</span> behind our success & achievement</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry&apos;s standard dummy text ever since the when an unknown print er took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining esse ntially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing soft ware like Aldus PageMaker including versions of lorem Ipsum.</p>
+
+          {/*  */}
+          <section>
+            <div className="flex flex-col gap-5 text-center px-10">
+                <h3 className="text-3xl"><span className="text-primary block">Our story</span> behind our success & achievement</h3>
+                <p className="mx-auto max-w-[80%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry&apos;s standard dummy text ever since the when an unknown print er took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining esse ntially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing soft ware like Aldus PageMaker including versions of lorem Ipsum.</p>
             </div>
         </section>
 
+          {/* COMPANY STATS */}
           <section className="ads-container p-14 rounded-xl before:rounded-xl flex flex-col gap-3 items-center">
               <span className="btn-primary-rounded">Why choose us</span>
               <h2 className="text-3xl text-white">Company statistics</h2>
@@ -55,22 +82,21 @@ export default function About() {
               </ul>
           </section>
 
+          {/* OUR VALUES */}
           <section className="flex flex-col items-center gap-5">
               <span className="btn-primary-rounded">Our values</span>
               <h2 className="text-3xl"><span className="text-primary">Our values</span> driven by relations</h2>
               <Swiper
                   className="w-full"
                   modules={[Navigation, Autoplay]}
-                  slidesPerView={2}
-                  spaceBetween={10}
+                  slidesPerView={'auto'}
                   navigation
                   loop
                   autoplay={{ delay: 2000 }}
-                  onSlideChange={() => console.log("Slide Change")}
-                  onSwiper={swiper => console.log(swiper)}>
+              >
                   {valuesItem.map((item, index) => {
                       return (
-                          <SwiperSlide key={index} className="text-center w-full bg-white shadow  rounded-xl flex flex-col p-10">
+                          <SwiperSlide key={index} className="text-center mr-10 w-[400px] bg-white shadow  rounded-xl flex flex-col p-10">
                               <div className="mx-auto p-4 rounded-xl bg-primary w-fit text-white"><FaMessage size={50}/></div>
                               <h3 className="text-primary text-xl mt-10 mb-3">{item.name}</h3>
                               <p>{item.content}</p>
@@ -80,6 +106,7 @@ export default function About() {
               </Swiper>
           </section>
 
+          {/* PROCESS */}
           <section className="flex gap-10 flex-col md:flex-row-reverse justify-between items-center">
               <div className="">
                   <Image
@@ -109,6 +136,7 @@ export default function About() {
               </div>
           </section>
 
+          {/* INFORMATION */}
           <section className="flex flex-col md:flex-row gap-10 justify-between items-center">
               <div>
                   <Image
@@ -138,6 +166,7 @@ export default function About() {
               </div>
           </section>
 
+          {/* RATING */}
           <section className="ads-container-rounded mt-20 px-10 py-20 before:bg-bottom">
               <div className="absolute z-10 w-full h-fit top-0 left-0 right-0 flex justify-center items-center">
                   <div className="flex flex-col gap-1 w-fit -translate-y-[35px] -rotate-3">
@@ -146,7 +175,7 @@ export default function About() {
                   </div>
               </div>
               <Swiper
-                  slidesPerView={1}
+                  slidesPerView={'auto'}
                   modules={[Autoplay, Pagination, Navigation]}
                   autoplay={{waitForTransition: true, delay: 2500}}
                   pagination={{clickable: true, el: '.ads-swiper-pagination',}}
@@ -154,7 +183,7 @@ export default function About() {
               >
                   {userRates.map((item, index) => {
                       return (
-                          <SwiperSlide key={index}>
+                          <SwiperSlide key={index} className="">
                               <div className="flex flex-col md:flex-row items-center gap-10">
                                   <Image
                                       src={item.user.image_url ?? ''}
@@ -175,25 +204,24 @@ export default function About() {
                   })}
               </Swiper>
               <div className="ads-swiper-pagination flex justify-center gap-2 mt-5 w-fit mx-auto"/>
-              <ReactOwlCarousel
-                  className="owl-theme mt-14"
-                  smartSpeed={100}
+              <Swiper
                   loop
-                  autoplay
-                  autoplayTimeout={1000}
-                  margin={10}
-                  stageClass='owl-stage transition-all duration-1000 ease-linear'
+                  modules={[Autoplay]}
+                  slidesPerView={'auto'}
+                  autoplay={{waitForTransition: true, delay: 1500}}
+                  className="mt-10"
               >
                   {sponsors.map((image, index) => {
                       return (
-                          <div key={index} className="item w-fit bg-white rounded-xl px-6 shadow h-[100px] flex items-center">
+                          <SwiperSlide key={index} className="item w-fit mr-20 bg-white rounded-xl px-6 shadow h-[100px] flex items-center">
                               <Image src={image} alt={'sponsors-' + index} width={150} height={50}/>
-                          </div>
+                          </SwiperSlide>
                       )
                   })}
-              </ReactOwlCarousel>
+              </Swiper>
           </section>
 
+          {/* MEET OUR TEAM */}
           <section className="text-center flex flex-col items-center">
               <span className="btn-primary-rounded">Experts</span>
               <h2 className="text-3xl mt-4 mb-10">Meet <span className="text-primary">Our team</span></h2>
