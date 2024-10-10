@@ -1,10 +1,10 @@
-
 import {Metadata} from "next";
 import { Manrope } from "next/font/google"
 import Header from '@/components/Header';
 import GoToUp from '@/components/Navigation/GoToUp';
-import './layout.scss';
 import Footer from "@/components/Footer";
+import './bootstrap'
+import './layout.scss';
 
 const manrope = Manrope({
   weight: ["400", "500", "600", "700"],

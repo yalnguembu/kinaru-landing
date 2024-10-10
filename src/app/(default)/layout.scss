@@ -7,6 +7,7 @@
     margin: 0;
     /* variables */
     --primary-color: #3f67f3;
+    --secondary-color: #ffffff;
     /* scroll bar */
     scroll-behavior: smooth;
     scrollbar-width: thin;
@@ -49,6 +50,9 @@
 @layer components {
     .btn-primary-rounded {
         @apply bg-primary text-white text-base rounded-2xl w-fit px-3 py-1;
+    }
+    .btn-secondary-rounded {
+        @apply btn-primary-rounded items-center text-primary bg-secondary;
     }
 
     .btn-action {
@@ -101,7 +105,7 @@ header {
 
 /* FOOTER */
 footer, #contact-form, .ads-container {
-    @apply relative bg-black/20 overflow-hidden;
+    @apply relative bg-black/20;
 
     &::before {
         content: '';
@@ -113,4 +117,10 @@ footer, #contact-form, .ads-container {
 
 footer .links a {
     @apply rounded-full border border-white p-1;
+}
+
+/* ADS */
+.ads-container-rounded {
+    @apply ads-container rounded-xl;
+    &::before { @apply rounded-xl; }
 }

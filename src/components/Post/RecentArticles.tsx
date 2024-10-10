@@ -17,7 +17,7 @@ export default function RecentArticles({posts, tags}: RecentArticlesProps)
 
     return (
         <section>
-            <div className="mb-10">
+            <div className="my-10">
                 <h2 className="text-3xl">Recent <span className="text-primary">articles</span></h2>
                 <hr className="my-2" />
                 <div>
