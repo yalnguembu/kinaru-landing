@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaPinterest, FaTwitter} from "react-icons/fa6";
+import {FaFacebookF, FaInstagram, FaPaperPlane, FaPinterest, FaTwitter} from "react-icons/fa6";
 import GooglePlayButton from "@/components/Buttons/GooglePlayButton";
 import AppleStoreButton from "@/components/Buttons/AppleStoreButton";
 
@@ -12,9 +12,10 @@ export default function Footer()
                         <h2>Subscribe newsletter</h2>
                         <p>Be the first to receive all latest post in your inbox</p>
                         <form action="#" method="GET">
-                            <div className="border border-white text-white bg-transparent flex rounded-lg p-2 gap-3">
-                                <input placeholder="Enter your email" type="email" name="email" className="bg-transparent flex-1 outline-none"/>
-                                <button type="submit" className="transition duration-200 bg-white text-primary font-bold p-2 rounded hover:bg-primary hover:text-white ">Send</button>
+                            <div className="flex gap-3 p-1 w-full bg-white rounded-lg">
+                                <input type="email" name="email" placeholder="Enter your email"
+                                       className="w-full bg-transparent border-0 outline-none text-gray-600"/>
+                                <button type="submit" className="bg-primary rounded-lg px-4"><FaPaperPlane/></button>
                             </div>
                         </form>
                         <p className="text-gray-400">By clicking send link you agree to receive message.</p>

@@ -29,7 +29,7 @@ export default function Blog() {
                 <form action="#" method="GET" className="w-full">
                     <div className="flex gap-3 p-1 w-full bg-white rounded-lg">
                         <input type="email" name="email" placeholder="Enter your email"
-                               className="flex-1 bg-transparent border-0 outline-none text-gray-600"/>
+                               className="w-full bg-transparent border-0 outline-none text-gray-600"/>
                         <button type="submit" className="bg-primary rounded-lg px-4"><FaPaperPlane/></button>
                     </div>
                     <p className="text-gray-400 text-sm mt-1">By clicking send link you agree to receive message.</p>
