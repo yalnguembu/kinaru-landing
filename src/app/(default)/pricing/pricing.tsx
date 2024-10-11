@@ -21,7 +21,7 @@ export default function PricingContent() {
                 <h2 className="text-4xl">Best <span className="text-primary">pricing plans</span></h2>
                 <p className="max-w-[500px]">Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard dummy text ever since.</p>
             </section>
-            <section className="bg-white rounded-xl px-5 py-10">
+            <section className="bg-white rounded-xl px-5 py-10 overflow-x-scroll">
                 <PricingTable prices={prices} />
                 <div className="text-center mt-5">
                     <p>Have question? <Link href="/faq" className="text-primary underline font-bold">Read FAQ</Link></p>

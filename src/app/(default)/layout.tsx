@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-        <body className={`${manrope.className} bg-[#fdf7ec]`}>
+        <body className={`${manrope.className}`}>
             <Header/>
-            <main className="min-h-screen pt-36 text-black">
+            <main className="min-h-screen pt-32 text-black">
               {children}
             </main>
             <GoToUp />

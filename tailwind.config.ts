@@ -15,7 +15,8 @@ const config: Config = {
         }
       },
       animation: {
-        'up-down': 'up-down 500ms linear'
+        'up-down': 'up-down 500ms linear',
+        'spin-low': 'spin 10s linear infinite',
       },
       colors: {
         background: "var(--background)",

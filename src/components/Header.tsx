@@ -35,7 +35,7 @@ export default function Header()
                 "lg:min-h-[110px] lg:flex",
                 collapsed ? '' : 'pt-3'
             )}>
-                <h1 className="w-fit flex">
+                <h1 className="w-fit flex items-start">
                     <Link href="/"><Image src={logo} alt="logo" width={250} height={50} className="" /></Link>
                 </h1>
                 <button onClick={onCollapseBtnClicked} className="flex lg:hidden">

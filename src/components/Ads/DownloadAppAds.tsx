@@ -12,12 +12,12 @@ export default function DownloadAppAds()
                     <Link href="#" className="btn-primary-rounded">Download</Link>
                     <h2 className="text-5xl md:text-3xl">Our app is available for Android & iOS</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s.</p>
-                    <div className="flex flex-col md:flex-row w-fit items-center gap-5">
+                    <div className="flex flex-row w-fit items-center gap-5">
                         <GooglePlayButton/>
                         <AppleStoreButton/>
                     </div>
                 </div>
-                <div className="self-end">
+                <div className="self-end mx-auto">
                     <div className="ads-phone">
                         <Image
                             src="/assets/images/app/iPhone-ads-cropped.png"

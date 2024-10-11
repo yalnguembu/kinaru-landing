@@ -9,6 +9,8 @@
     // --primary-color: #3f67f3;
     --primary-color: #F35725FF;
     --secondary-color: #ffffff;
+    --background: #fdf7ec;
+    --foreground: #000000;
     /* scroll bar */
     scroll-behavior: smooth;
     scrollbar-width: thin;
@@ -18,11 +20,13 @@
 @layer base {
     body {
         font-family: sans-serif;
+        background-color: var(--background);
+        color: var(--foreground);
     }
     /* TITLES */
-    h1 { @apply text-2xl font-bold ; }
-    h2 { @apply text-xl font-bold ; }
-    h3 { @apply text-lg font-bold ; }
+    h1 { @apply text-4xl font-bold ; }
+    h2 { @apply text-3xl font-bold ; }
+    h3 { @apply text-xl font-bold ; }
     h4 { @apply text-base font-bold ; }
     h5 { @apply text-sm font-bold ; }
     h6 { @apply text-xs font-bold ; }
@@ -44,7 +48,7 @@
 
 @layer utilities {
     .container {
-        @apply mx-auto;
+        @apply mx-auto px-3;
     }
 }
 

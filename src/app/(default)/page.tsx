@@ -1,4 +1,4 @@
-import HomeContent from "@/app/(default)/home";
+import HomeContent from "@/app/(default)/home/home";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {

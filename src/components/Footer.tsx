@@ -7,7 +7,7 @@ export default function Footer()
     return (
         <footer className="text-white mt-20">
             <div className="container flex flex-col gap-10 py-20">
-                <div className="flex justify-between items-start">
+                <div className="flex flex-col gap-5 md:flex-row justify-evenly text-center md:text-left items-center md:items-start">
                     <div className="flex flex-col gap-5">
                         <h2>Subscribe newsletter</h2>
                         <p>Be the first to receive all latest post in your inbox</p>
@@ -20,7 +20,7 @@ export default function Footer()
                         </form>
                         <p className="text-gray-400">By clicking send link you agree to receive message.</p>
                         <p><b>support@localhost &thinsp; | &thinsp; +1-900-123 4567</b></p>
-                        <div className="links flex gap-3">
+                        <div className="links flex justify-center md:justify-start gap-3">
                             <a href="#" target="_blank"><FaFacebookF size={28}/></a>
                             <a href="#" target="_blank"><FaTwitter size={28}/></a>
                             <a href="#" target="_blank"><FaInstagram size={28}/></a>
@@ -29,7 +29,7 @@ export default function Footer()
                     </div>
                     <div className="flex flex-col gap-3">
                         <h2 className="text-center">Download App</h2>
-                        <div className="flex gap-5">
+                        <div className="flex flex-col md:flex-row gap-5">
                             <GooglePlayButton />
                             <AppleStoreButton />
                         </div>
