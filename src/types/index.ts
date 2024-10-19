@@ -35,3 +35,8 @@ export type Post = {
         author: User
     }
 }
+
+export type Faq = {
+    question: string,
+    answer: string
+}

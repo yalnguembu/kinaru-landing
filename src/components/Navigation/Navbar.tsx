@@ -24,6 +24,7 @@ export default function Navbar({collapsed = true}: NavbarProps)
                 <li><NavLink href="/reviews">Reviews</NavLink></li>
                 <li><NavLink href="/blog">Blog</NavLink></li>
                 <li><NavLink href="/contact">Contact</NavLink></li>
+                <li><NavLink href="/faq">Faq</NavLink></li>
             </ul>
             <NavLink href="#" className="btn-action">Download</NavLink>
         </nav>
