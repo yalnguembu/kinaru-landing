@@ -24,7 +24,7 @@ export default function RecentArticles({posts, tags}: RecentArticlesProps)
                     {tags.map((tag, index) => {
                         return (
                             <button key={index} className={cn(
-                                'rounded-lg px-5 py-3 mr-10 hover:bg-primary hover:text-white transition duration-300',
+                                'rounded-lg px-5 py-3 mr-5 hover:bg-primary hover:text-white transition duration-300',
                                 currentTag === index ? 'bg-primary text-white' : 'bg-white text-gray-600')}
                                     onClick={() => setCurrentTag(index)}
                             >{tag}</button>

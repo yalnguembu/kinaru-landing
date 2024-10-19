@@ -16,13 +16,13 @@ export default function BlogContent() {
 
     return (
         <div className="container">
-            <section className="flex gap-5 justify-between items-start">
-                <div className="max-w-[50%] flex flex-col gap-3">
+            <section className="flex flex-col lg:flex-row text-center lg:text-left gap-5 justify-between items-start">
+                <div className="lg:max-w-[50%] flex flex-col items-center lg:items-start gap-3">
                     <span className="btn-primary-rounded">Our Resources</span>
                     <h2 className="text-4xl">Latest <span className="text-primary">blog posts</span></h2>
                     <p>Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard text ever since.</p>
                 </div>
-                <div className="text-white flex flex-col items-center gap-3 ads-container w-[45%] px-10 py-20 before:rounded-2xl rounded-2xl">
+                <div className="text-white flex flex-col items-center gap-3 ads-container w-full lg:w-[45%] px-10 py-20 before:rounded-2xl rounded-2xl">
                     <FaMailBulk size={64} />
                     <h3>Join our mailing list</h3>
                     <p>Be the first to receive all latest posts in your inbox</p>
