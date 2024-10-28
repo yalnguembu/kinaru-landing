@@ -3,7 +3,7 @@ import ReviewsPage from "@/app/(default)/reviews/reviews";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: 'Reviews | Kinaru',
+    title: 'Revues | Kinaru',
     description: 'Discover other user\'s reviews'
 }
 

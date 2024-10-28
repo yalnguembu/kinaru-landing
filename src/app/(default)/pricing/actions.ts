@@ -5,7 +5,7 @@ export async function fetchPricings()
     return Promise.resolve([
         {
             name: 'Basic',
-            appliers: 'For single users',
+            appliers: 'Pour les utilisateurs',
             price: 15,
             storage: 10,
             chatHistory: 30,
@@ -16,7 +16,7 @@ export async function fetchPricings()
         },
         {
             name: 'Premium',
-            appliers: 'For agencies',
+            appliers: 'Pour les agences',
             price: 15,
             storage: 100,
             chatHistory: -1,
@@ -27,7 +27,7 @@ export async function fetchPricings()
         },
         {
             name: 'Standard',
-            appliers: 'For team',
+            appliers: 'Pour les équipes',
             price: 30,
             storage: 30,
             chatHistory: 60,

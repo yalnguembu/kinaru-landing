@@ -20,7 +20,7 @@ export default function AnimatedValue({value, start = 0, time = 10, step = 1}: A
         return () => {
             clearInterval(intervalId)
         }
-    }, [])
+    }, [value, step, time])
 
     return (
         <span>{val}</span>

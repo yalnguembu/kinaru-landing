@@ -6,8 +6,8 @@ export default function MeetTeamSection()
 {
     return (
         <section className="text-center flex flex-col items-center">
-            <span className="btn-primary-rounded">Experts</span>
-            <h2 className="text-3xl mt-4 mb-10">Meet <span className="text-primary">Our team</span></h2>
+            <span className="btn-primary-rounded">Nos Experts</span>
+            <h2 className="text-3xl mt-4 mb-10">Decouvrez <span className="text-primary">Notre équipe</span></h2>
             <div className="teams flex flex-col gap-20 md:flex-row">
                 {teams.map((user, index) => {
                     const bigSize = 350, smallSize = 170;

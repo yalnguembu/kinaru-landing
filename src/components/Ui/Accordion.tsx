@@ -69,7 +69,7 @@ export function Accordion({label, content, className, ...props}: AccordionProps)
 
     useEffect(() => {
         registerItem(key)
-    }, [registerItem]);
+    }, [registerItem, key]);
 
     return (
         <div

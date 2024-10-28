@@ -1,6 +1,6 @@
 import {Post} from "@/types";
 
-export const tags = ['Mobile App', 'User Experience']
+export const tags = ['Mobile', 'Experience Utilisateur']
 
 export async function fetchPosts()
 {

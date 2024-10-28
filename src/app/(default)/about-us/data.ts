@@ -11,18 +11,25 @@ export const firstCarouselImages: string[] = [
 ]
 
 export const statsValues = [
-    {number: 2300, start: 1500, time:10, step: 3, name: 'Reviews', letter: '+'},
-    {number: 150, step: 3, name: 'Countries', letter: '+'},
-    {number: 17, name: 'Download', letter: 'M+'},
-    {number: 8, name: 'Followers', letter: 'M+'}
+    {number: 2300, start: 1500, time:10, step: 3, name: 'Revues', letter: '+'},
+    {number: 150, step: 3, name: 'Pays', letter: '+'},
+    {number: 17, name: 'Téléchargements', letter: 'M+'},
+    {number: 8, name: 'Abonnements', letter: 'M+'}
 ]
 
 export const valuesItem = [
-    {name: 'Skilled Team', content: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem Ipsum has been the industry\'s standard dummy text ever since.'},
-    {name: 'Creative Thinking', content: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem Ipsum has been the industry\'s standard dummy text ever since.'},
-    {name: 'Growth Support', content: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem Ipsum has been the industry\'s standard dummy text ever since.'},
-    {name: 'Creative Thinking', content: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem Ipsum has been the industry\'s standard dummy text ever since.'},
-    {name: 'Skilled Team', content: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem Ipsum has been the industry\'s standard dummy text ever since.'},
+    {
+        name: "Simplifier votre vie",
+        content: "Simplifier la recherche et la gestion des location à travers une plateforme intuitive aussi bien pour les locataires que pour les propriétaires."
+    },
+    {
+        name: "Votre sécurité",
+        content: "Garantir des transactions de locations sécurisées et transparentes, tout en vous permettant de fournir moins d'effort pour le faire."
+    },
+    {
+        name: "Aucune restriction",
+        content: "Nous nous adressons aux particuliers , aux agences immobilières et à tout personnel cherchant une solution moderne et efficace pour la gestion de locations"
+    },
 ]
 
 export const teams: User[] = [

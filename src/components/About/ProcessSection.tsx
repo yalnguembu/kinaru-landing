@@ -7,7 +7,7 @@ import {FaCheckCircle} from "react-icons/fa";
 export default function ProcessSection()
 {
     return (
-        <section className="flex gap-10 flex-col md:flex-row-reverse justify-between items-center">
+        <section className="flex gap-10 flex-col md:flex-row-reverse justify-between items-center text-left">
             <div className="">
                 <Image
                     src="/assets/images/process.png"

@@ -17,15 +17,15 @@ export default function PricingContent() {
     return (
         <div className="container flex flex-col gap-10">
             <section className="flex flex-col text-center items-center gap-3">
-                <span className="btn-primary-rounded">Pricing</span>
-                <h2 className="text-4xl">Best <span className="text-primary">pricing plans</span></h2>
+                <span className="btn-primary-rounded">Tarifs</span>
+                <h2 className="text-4xl">Le meilleur <span className="text-primary">forfait d&apos;abonnement</span></h2>
                 <p className="max-w-[500px]">Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard dummy text ever since.</p>
             </section>
             <section className="bg-white rounded-xl px-5 py-10 overflow-x-scroll">
                 <PricingTable prices={prices} />
                 <div className="text-center mt-5">
-                    <p>Have question? <Link href="/faq" className="text-primary underline font-bold">Read FAQ</Link></p>
-                    <p>Not sure what to choose? <Link href="/contact" className="text-primary underline font-bold">Contact Us</Link> for custom packages</p>
+                    <p>Vous avez une question? <Link href="/faq" className="text-primary underline font-bold">Lisez le FAQ</Link></p>
+                    <p>Vous ne savez pas quoi choisir ? <Link href="/contact" className="text-primary underline font-bold">Contactez nous</Link> pour un forfait personnaliser</p>
                 </div>
             </section>
             <DownloadAppAds />

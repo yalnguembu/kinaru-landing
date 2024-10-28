@@ -18,15 +18,15 @@ export default function Navbar({collapsed = true}: NavbarProps)
                 "flex gap-5 lg:items-center text-black lg:flex-row",
                 collapsed ? '' : 'flex-col items-start'
             )}>
-                <li><NavLink href="/">Home</NavLink></li>
-                <li><NavLink href="/about-us">About Us</NavLink></li>
-                <li><NavLink href="/pricing">Pricing</NavLink></li>
-                <li><NavLink href="/reviews">Reviews</NavLink></li>
+                <li><NavLink href="/">Accueil</NavLink></li>
+                <li><NavLink href="/about-us">A Propos</NavLink></li>
+                <li><NavLink href="/pricing">Tarifs</NavLink></li>
+                <li><NavLink href="/reviews">Revues</NavLink></li>
                 <li><NavLink href="/blog">Blog</NavLink></li>
                 <li><NavLink href="/contact">Contact</NavLink></li>
                 <li><NavLink href="/faq">Faq</NavLink></li>
             </ul>
-            <NavLink href="#" className="btn-action">Download</NavLink>
+            <NavLink href="#" className="btn-action">Télécharger</NavLink>
         </nav>
     )
 }

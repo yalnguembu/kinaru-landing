@@ -9,8 +9,8 @@ export default function OurValuesSection()
 {
     return (
         <section className="flex flex-col items-center gap-5">
-            <span className="btn-primary-rounded">Our values</span>
-            <h2 className="text-3xl"><span className="text-primary">Our values</span> driven by relations</h2>
+            <span className="btn-primary-rounded">Nos objectifs</span>
+            <h2 className="text-3xl">Quels sont nos <span className="text-primary">Objectifs ?</span></h2>
             <Swiper
                 className="w-full"
                 modules={[Navigation, Autoplay]}

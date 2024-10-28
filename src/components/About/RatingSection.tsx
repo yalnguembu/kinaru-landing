@@ -13,7 +13,7 @@ export default function RatingSection()
             <div className="absolute z-10 w-full h-fit top-0 left-0 right-0 flex justify-center items-center">
                 <div className="flex flex-col gap-1 w-fit -translate-y-[35px] -rotate-3">
                     <Stars stars={5} starColor='orange'/>
-                    <span className="btn-primary-rounded">4.9 / 5.0 Rated on App store</span>
+                    <span className="btn-primary-rounded">4.9 / 5.0 Notes sur les stores</span>
                 </div>
             </div>
             <Swiper
@@ -35,11 +35,9 @@ export default function RatingSection()
                                     className=""
                                 />
                                 <div className="max-w-[70%] flex flex-col text-white text-xl">
-                                    <span className="mx-auto md:mx-0 w-fit"><Stars stars={item.rate}
-                                                                                   starColor='orange'/></span>
+                                    <span className="mx-auto md:mx-0 w-fit"><Stars stars={item.rate} starColor='orange'/></span>
                                     <p className="mt-2 mb-5">{item.comment}</p>
-                                    <p><b>{item.user.name},</b><span
-                                        className="text-base">&thinsp; {item.user.role}</span></p>
+                                    <p><b>{item.user.name},</b><span className="text-base">&thinsp; {item.user.role}</span></p>
                                 </div>
                             </div>
                         </SwiperSlide>

@@ -5,7 +5,7 @@ import {FaCheckCircle} from "react-icons/fa";
 export default function InformationSection()
 {
     return (
-        <section className="flex flex-col md:flex-row gap-10 justify-between items-center">
+        <section className="flex flex-col md:flex-row gap-10 justify-between items-center text-left">
             <div>
                 <Image
                     src="/assets/images/communication.png"

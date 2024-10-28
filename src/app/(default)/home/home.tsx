@@ -14,6 +14,8 @@ import Image from "next/image";
 import ActiveUserBar from "@/components/ActiveUserBar";
 
 import './home.scss'
+// import ProcessSection from "@/components/About/ProcessSection";
+// import InformationSection from "@/components/About/InformationSection";
 
 export default function HomeContent()
 {
@@ -25,18 +27,15 @@ export default function HomeContent()
                     <ReactTyped
                         className="text-primary font-bold"
                         strings={[
-                            "Add any text you like here.",
-                            "Auto type text",
-                            "Type Writing text"
+                            "Revolutionnez votre experience immonbiliere",
+                            "En rejoignant Kinaru"
                         ]}
                         typeSpeed={40}
                         backSpeed={40}
                         loop={true}
                     />
-                    <h2>Lead generation <span className="text-primary">mobile <br/> app landing page</span></h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing indus <br/> orem Ipsum has been the
-                        industry&apos;s.
-                    </p>
+                    <h2><span className="text-primary">Kinaru </span> - La cle de votre <br />futur chez vous.</h2>
+                    <p>Que vous soyez à la recherche d&apos;un apartement moderne, d&apos;un studio, <br /> d&apos;une chambre ou autre, Kinaru simplifie chaque étapes de votre parcours.</p>
                     <div className='avatars'>
                         {avatars.map((image, index) => {
                             return (
@@ -52,7 +51,7 @@ export default function HomeContent()
                         <Image src="/assets/images/icons/play.svg" alt='icon-play' width={64} height={64} />
                     </div>
                     <span className="font-bold text-xl">12M+ Active users</span>
-                    <span>The best application to manage your <br/> customer worldwide</span>
+                    <span>La meilleure plateforme de gestion <br/> immobilière</span>
                     <div className="flex gap-10 mt-3">
                         <GooglePlayButton/>
                         <AppleStoreButton/>
@@ -71,7 +70,7 @@ export default function HomeContent()
                         centeredSlides={true}
                         className="w-[300px] relative"
                     >
-                        {[3, 5, 7].map((n, index) => {
+                        {[7, 8, 5].map((n, index) => {
                             return (
                                 <SwiperSlide key={index} className="w-full h-auto flex items-center justify-center">
                                     <Image
@@ -103,8 +102,7 @@ export default function HomeContent()
             {/* SERVICES */}
             <section className="flex flex-col gap-3 items-center text-center">
                 <span className="btn-primary-rounded">Services</span>
-                <h2 className="text-3xl">Premium <span className="text-primary">services</span> of <br/> our application
-                </h2>
+                <h2 className="text-3xl">Nos differents <span className="text-primary">services</span><br/></h2>
                 <div className="flex flex-col gap-10">
                     {/* TASK MANAGE */}
                     {services.map((service, index) => {
@@ -121,13 +119,18 @@ export default function HomeContent()
                             />
                         )
                     })}
+
+                    {/*/!* PROCESS *!/*/}
+                    {/*<ProcessSection />*/}
+                    {/*/!* INFORMATION *!/*/}
+                    {/*<InformationSection />*/}
                 </div>
             </section>
 
             {/* STEPS */}
             <section className="ads-container-rounded p-10 flex flex-col gap-3 items-center text-white">
-                <span className="btn-primary-rounded">Quick & easy</span>
-                <h2>How it works in 3 steps</h2>
+                <span className="btn-primary-rounded">Rapide et Facile</span>
+                <h2>Tout en seulement 03 étapes</h2>
                 <div className="flex flex-col md:flex-row gap-10 mt-5 items-start mb-10 text-center">
                     {steps.map((item, index) => {
                         const {icon, title, description} = item
@@ -147,15 +150,15 @@ export default function HomeContent()
                         )
                     })}
                 </div>
-                <a href="#" className="btn-action">Get started now</a>
+                <a href="#" className="btn-action">Commencez maintenant</a>
             </section>
 
             {/* OUR CLIENTS */}
             <section className="flex flex-col gap-3 items-center text-center">
-                <span className="btn-primary-rounded">Our clients</span>
+                <span className="btn-primary-rounded">Nous clients</span>
                 <h2 className="text-3xl">
                     <span className="text-primary block">3500+ companies</span>
-                    using our application
+                    utilisent notre application
                 </h2>
                 <div className="mt-10 flex flex-wrap gap-5 items-center justify-center">
                     {sponsors.map((image, index) => {
@@ -178,8 +181,8 @@ export default function HomeContent()
 
             {/* APP SCREENS */}
             <section id="apps-creens" className="flex flex-col gap-3 text-center items-center">
-                <span className="btn-primary-rounded">App screens</span>
-                <h2 className="text-3xl">User friendly <span className="text-primary">interface</span> design</h2>
+                <span className="btn-primary-rounded">Interfaces</span>
+                <h2 className="text-3xl">Des <span className="text-primary">interfaces</span> intuitives</h2>
                 <Swiper
                     loop
                     modules={[Autoplay, Pagination, EffectCoverflow]}

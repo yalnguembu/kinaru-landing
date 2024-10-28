@@ -9,16 +9,16 @@ export default function Footer()
             <div className="container flex flex-col gap-10 py-20">
                 <div className="flex flex-col gap-5 md:flex-row justify-evenly text-center md:text-left items-center md:items-start">
                     <div className="flex flex-col gap-5">
-                        <h2>Subscribe newsletter</h2>
-                        <p>Be the first to receive all latest post in your inbox</p>
+                        <h2>S&apos;inscrire à notre Newsletter</h2>
+                        <p>Soyez le premier à recevoir nos nouveaux posts.</p>
                         <form action="#" method="GET">
                             <div className="flex gap-3 p-1 w-full bg-white rounded-lg">
-                                <input type="email" name="email" placeholder="Enter your email"
+                                <input type="email" name="email" placeholder="Entrez votre email"
                                        className="w-full bg-transparent border-0 outline-none text-gray-600"/>
                                 <button type="submit" className="bg-primary rounded-lg px-4"><FaPaperPlane/></button>
                             </div>
                         </form>
-                        <p className="text-gray-400">By clicking send link you agree to receive message.</p>
+                        <p className="text-gray-400">Cliquez sur Envoyer pour autoriser les mails.</p>
                         <p><b>support@localhost &thinsp; | &thinsp; +1-900-123 4567</b></p>
                         <div className="links flex justify-center md:justify-start gap-3">
                             <a href="#" target="_blank"><FaFacebookF size={28}/></a>
@@ -28,7 +28,7 @@ export default function Footer()
                         </div>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <h2 className="text-center">Download App</h2>
+                        <h2 className="text-center">Téléchargez l&apos;Appli</h2>
                         <div className="flex flex-col md:flex-row gap-5">
                             <GooglePlayButton />
                             <AppleStoreButton />
@@ -36,8 +36,9 @@ export default function Footer()
                     </div>
                 </div>
                 <p className="text-center bg-gray-950/75 p-5 rounded-lg">
-                   Copyright &copy; All rights reserved { (new Date()).getFullYear() }
+                   Copyright &copy; Tout droits reservés { (new Date()).getFullYear() }
                 </p>
+                <p className="text-center hidden">Developed By <a href="https://github.com/danofred00">Daniel Leussa</a></p>
             </div>
         </footer>
     )

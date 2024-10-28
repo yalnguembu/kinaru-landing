@@ -9,52 +9,60 @@ export const avatars = [
 
 export const services = [
     {
-        tag: 'Task Manage',
-        title: 'Task creation & manage lorem ipsum',
-        image: "/assets/images/services/service-1.png",
+        tag: 'Recherche de biens',
+        title: 'Recherche de biens immobiliers',
+        image: "/assets/images/services/recherche_immobilieres.png",
         icon: <FaCalendar />,
-        description: "Lorem Ipsum is simply dummy text of the printing and " +
-            "typing industry lorem Ipsum has been the industry's standard " +
-            "dummy text ever since.",
-        actionText: "Start Free Trial",
+        description: "Découvrez un large éventail de biens immobiliers disponibles " +
+            "à la location ou à la vente, que ce soit un appartement " +
+            "en centre-ville ou une maison de Campagne.",
+        actionText: "Commencez l'essaie gratuit",
         actionUrl: "#",
         data: [
-            'Automate all tasks',
-            'Get notified Lorem'
+
         ],
         className: "flex-col-reverse md:flex-row-reverse"
     },
     {
-        tag: 'Schedule Meeting',
-        title: 'Manage project and track lorem',
-        image: "/assets/images/services/service-2.png",
+        tag: 'Gestion locative',
+        title: 'Gerez facilement vos bien en ligne.',
+        image: "/assets/images/services/gestion_immobiliere.png",
         icon: <FaClock />,
-        description: "Lorem Ipsum is simply dummy text of the printing and " +
-            "typing industry lorem Ipsum has been the industry's standard " +
-            "dummy text ever since.",
-        actionText: "Start Free Trial",
+        description: "De la publication d'annonces à la gestion des demandes " +
+            "des locataires, tout est centralisé sur une seule plateforme.",
+        actionText: "Essayez Maintenant",
         actionUrl: "#",
         data: [
-            'Lorem Ipsum is simply dummy text',
-            'The printing and typesetting industry lorem',
-            'Has been the industry\'s dummy'
+
         ],
         className: "flex-col-reverse"
     },
     {
-        tag: 'History',
-        title: 'Task creation & manage lorem ipsum dollar',
-        image: "/assets/images/services/service-3.png",
+        tag: 'Prets bancaires et assurances',
+        title: "Accedez a des services financiers.",
+        image: "/assets/images/services/banque_assusrance.png",
         icon: <FaHistory />,
-        description: "Lorem Ipsum is simply dummy text of the printing and " +
-            "typing industry lorem Ipsum has been the industry's standard " +
-            "dummy text ever since.",
-        actionText: "Start Free Trial",
+        description: "Comparez les offres de pres bancaires, realisez des simulations de credit et souscrivez" +
+            " à des assurances de loyer impyé pour sécuriser vos investissements",
+        actionText: "Commencez l'essaie gratuit",
         actionUrl: "#",
         data: [
-            'Lorem Ipsum is simply dummy text',
-            'The printing and type setting industry lorem',
-            'Has been the industry\'s dummy'
+
+        ],
+        className: "flex-col-reverse md:flex-row-reverse"
+    },
+    {
+        tag: 'Maintenance et Conciergerie',
+        title: "Une service d'assistance a votre écoute",
+        image: "/assets/images/services/visite_virtuelle.png",
+        icon: <FaHistory />,
+        description: "Besoin d'une réparation rapide ou de conseils pour un aménagement ? " +
+                    "Avec Kinaru, vous pouvez réserver des services de maintenance ou de " +
+                    "conciergerie directement depuis la plateforme.",
+        actionText: "Essayez Maintenant",
+        actionUrl: "#",
+        data: [
+
         ],
         className: "flex-col-reverse md:flex-row-reverse"
     },
@@ -63,17 +71,17 @@ export const services = [
 export const steps = [
     {
         icon: <FaDownload size={32} />,
-        title: 'Download app',
-        description: 'Download App. It will work for Android, Mac & Windows'
+        title: "Téléchargez l'appli",
+        description: "Téléchargez l'application, disponible sur Android et IPhone"
     },
     {
         icon: <FaDownload size={32} />,
-        title: 'Create account',
-        description: 'Our app is free for 14 days, Sign up free for trial period'
+        title: 'Créez un compte',
+        description: "Notre service est gratuit pour 14 jours, Inscrivez-vous pour tester."
     },
     {
         icon: <FaDownload size={32} />,
-        title: 'Enjoy the app',
-        description: 'Enjoy our app & share most amazing app experience'
+        title: 'Enjoy!',
+        description: 'Enjoy notre application et partage ton experience.'
     },
 ]

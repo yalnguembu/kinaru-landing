@@ -6,9 +6,9 @@ import ContactItem from "@/components/Contact/ContactItem";
 import ContactForm from "@/components/Contact/ContactForm";
 
 const contactItems = [
-    {icon: <FaMailBulk size={64}/>, label: "Email us", text: "example@gmail.com", href: 'mailto:'},
-    {icon: <FaPhoneSquare size={64}/>, label: "Call us", text: "+11234567890", href: 'tel:+11234567890'},
-    {icon: <FaMapLocation size={64}/>, label: "Our location", text: "Open Google Maps", href: 'map:'}
+    {icon: <FaMailBulk size={64}/>, label: "Envoyez un mail", text: "example@gmail.com", href: 'mailto:'},
+    {icon: <FaPhoneSquare size={64}/>, label: "Appellez-nous", text: "+11234567890", href: 'tel:+11234567890'},
+    {icon: <FaMapLocation size={64}/>, label: "Notre position", text: "Open Google Maps", href: 'map:'}
 ]
 
 export default function ContactContent() {
@@ -16,9 +16,9 @@ export default function ContactContent() {
         <div className="container flex flex-col gap-20">
             <section>
                 <div className="text-center flex flex-col gap-3 justify-center items-center">
-                    <span className="btn-primary-rounded">Contact Us</span>
-                    <h2 className="text-3xl">Any query? <span className="text-primary">Let&apos;s talk</span></h2>
-                    <p className="max-w-[500px]">Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard dummy text ever since.</p>
+                    <span className="btn-primary-rounded">Contactez-nous</span>
+                    <h2 className="text-3xl">Vous avez un soucis ? <span className="text-primary">Discutons-en</span></h2>
+                    <p className="max-w-[500px]">Ci dessous vous avez tous les moyens par lequel vous pouvez nous contacter.</p>
                 </div>
                 <div className="flex justify-between mt-10">
                     {contactItems.map((item, index) => {

@@ -17,26 +17,26 @@ export default function BlogContent() {
     return (
         <div className="container">
             <section className="flex flex-col lg:flex-row text-center lg:text-left gap-5 justify-between items-start">
-                <div className="lg:max-w-[50%] flex flex-col items-center lg:items-start gap-3">
-                    <span className="btn-primary-rounded">Our Resources</span>
-                    <h2 className="text-4xl">Latest <span className="text-primary">blog posts</span></h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard text ever since.</p>
+                <div className="lg:max-w-[50%] flex flex-col items-center lg:items-start gap-3 mx-auto">
+                    <span className="btn-primary-rounded">Nos Resources</span>
+                    <h2 className="text-4xl">Nos Posts <span className="text-primary">Recents</span></h2>
+                    <p>Si dessous, vous trouverez les meilleurs posts les plus recents que nous avons.</p>
                 </div>
                 <div className="text-white flex flex-col items-center gap-3 ads-container w-full lg:w-[45%] px-10 py-20 before:rounded-2xl rounded-2xl">
                     <FaMailBulk size={64} />
-                    <h3>Join our mailing list</h3>
-                    <p>Be the first to receive all latest posts in your inbox</p>
+                    <h3>Rejoindre notre carnet d&apos;adresse</h3>
+                    <p>Soyez le premier a recevoir nos posts en inbox</p>
                     <form action="#" method="GET" className="w-full">
                         <div className="flex gap-3 p-1 w-full bg-white rounded-lg">
-                            <input type="email" name="email" placeholder="Enter your email"
+                            <input type="email" name="email" placeholder="Adresse Email"
                                    className="w-full bg-transparent border-0 outline-none text-gray-600"/>
                             <button type="submit" className="bg-primary rounded-lg px-4"><FaPaperPlane/></button>
                         </div>
-                        <p className="text-gray-400 text-sm mt-1">By clicking send link you agree to receive message.</p>
+                        <p className="text-gray-400 text-sm mt-1">Cliquez sur Envoyez nous autorisera à vous envoyer des messages.</p>
                     </form>
                 </div>
             </section>
-            <RecentArticles posts={posts} tags={['All', ...tags]}/>
+            <RecentArticles posts={posts} tags={['Tout', ...tags]}/>
         </div>
     );
 }

@@ -18,13 +18,14 @@ export default function ReviewsPage()
     return (
         <div className="container">
             <section className="text-center flex flex-col gap-3 items-center justify-center">
-                <span className="btn-primary-rounded">Reviews</span>
-                <h2 className="text-4xl">Words from <span className="text-primary">trusted peoples</span></h2>
-                <p className="max-w-[500px]">Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been
-                    the industry&apos;s standard dummy text ever since.</p>
+                <span className="btn-primary-rounded">Revues</span>
+                <h2 className="text-4xl">Les avis <span className="text-primary">d&apos;autres personnes</span></h2>
+                <p className="max-w-[500px]">
+                    Vous trouverez ici, les avis de différentes personnes à propos de notre service.
+                </p>
                 <div className="mt-5">
                     <Stars stars={5}/>
-                    <p className="font-bold mt-2">4.9 / 5.0 Rated on App store | <span className="text-primary">1399 Total user reviews</span>
+                    <p className="font-bold mt-2">4.9 / 5.0 Note sur les Stores | <span className="text-primary">1399 avis utilisateurs</span>
                     </p>
                 </div>
             </section>

@@ -11,38 +11,38 @@ export default function PricingTable({prices}: PricingTableProps)
         <table className="table-horizontal w-full text-left">
             <tbody>
                 <tr>
-                    <th>Features</th>
+                    <th>Fonctionnalités</th>
                     {prices.map((item, index) => {
                         return (
                             <td key={index}>
                                 <div className="flex flex-col mb-5">
                                     <h3 className="text-xl">{item.name}</h3>
                                     <span className="text-base">{item.appliers}</span>
-                                    <span className="text-primary my-5"><span className="text-4xl font-bold">${item.price}</span>/month</span>
-                                    <a href="#" className="btn-action">Choose Plan</a>
+                                    <span className="text-primary my-5"><span className="text-4xl font-bold">${item.price}</span>/mois</span>
+                                    <a href="#" className="btn-action">Souscrire</a>
                                 </div>
                             </td>
                         )
                     })}
                 </tr>
                 <tr>
-                    <th>Cloud Storage</th>
+                    <th>Stockage Cloud</th>
                     {prices.map((item, index) => {
                         return (
-                            <td key={index}>Up to {item.storage} GB</td>
+                            <td key={index}>Jusqu&apos;à {item.storage} GB</td>
                         )
                     })}
                 </tr>
                 <tr>
-                    <th>Chat History</th>
+                    <th>Historique de Chats</th>
                     {prices.map((item, index) => {
                         return (
-                            <td key={index}>{item.chatHistory > 0 ? `${item.chatHistory} days` : 'Unlimited'}</td>
+                            <td key={index}>{item.chatHistory > 0 ? `${item.chatHistory} Jours` : 'Illimité'}</td>
                         )
                     })}
                 </tr>
                 <tr>
-                    <th>Optimization</th>
+                    <th>Optimisations</th>
                     {prices.map((item, index) => {
                         return (
                             <td key={index}>{!item.optimization ? <FaTimesCircle color="red"/> : <FaCheckCircle color="var(--primary-color)" />}</td>
@@ -50,7 +50,7 @@ export default function PricingTable({prices}: PricingTableProps)
                     })}
                 </tr>
                 <tr>
-                    <th>Unlimited Viewers</th>
+                    <th>Notes Illimités</th>
                     {prices.map((item, index) => {
                         return (
                             <td key={index}>{!item.unlimitedViewers ? <FaTimesCircle color="red"/> : <FaCheckCircle color="var(--primary-color)" />}</td>
@@ -61,15 +61,15 @@ export default function PricingTable({prices}: PricingTableProps)
                     <th>Live reporting</th>
                     {prices.map((item, index) => {
                         return (
-                            <td key={index}>{item.liveReporting} Days</td>
+                            <td key={index}>{item.liveReporting} Jours</td>
                         )
                     })}
                 </tr>
                 <tr>
-                    <th>24/7 Support</th>
+                    <th>Assistance 24/7</th>
                     {prices.map((item, index) => {
                         return (
-                            <td key={index}>{item.supportDays} Days</td>
+                            <td key={index}>{item.supportDays} Jours</td>
                         )
                     })}
                 </tr>

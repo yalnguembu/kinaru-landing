@@ -13,9 +13,9 @@ export default function ActiveUsersSpin()
                 className="animate-spin-low"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="p-7 bg-primary rounded-full">
-                                <FaArrowDownLong size={26} color="white"/>
-                            </span>
+                <span className="p-7 bg-primary rounded-full">
+                    <FaArrowDownLong size={26} color="white"/>
+                </span>
             </div>
         </div>
     )

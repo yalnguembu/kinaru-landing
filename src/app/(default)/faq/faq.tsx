@@ -15,8 +15,8 @@ export default function FaqContent()
     return (
         <div id="faq" className="container">
             <section className="flex flex-col gap-3 items-center text-center">
-                <span className="btn-primary-rounded">Questions & Answer</span>
-                <h2><span className="text-primary">FAQs</span> - Frequently asked questions</h2>
+                <span className="btn-primary-rounded">Questions & Reponses</span>
+                <h2><span className="text-primary">FAQs</span> - Les questions les plus posées</h2>
                 <AccordionProvider>
                     <div className="columns-1 md:columns-2 h-full w-full mt-3">
                         {questions.map(({question, answer}, index) => {

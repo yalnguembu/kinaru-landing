@@ -8,8 +8,8 @@ export default function CompanyStatsSection()
 {
     return (
         <section className="ads-container p-14 rounded-xl before:rounded-xl flex flex-col gap-3 items-center">
-            <span className="btn-primary-rounded">Why choose us</span>
-            <h2 className="text-3xl text-white">Company statistics</h2>
+            <span className="btn-primary-rounded">Pourquoi nous ?</span>
+            <h2 className="text-3xl text-white">Nos statistiques</h2>
             <ul className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-0">
                 {statsValues.map((item, index) => {
                     const isEven = index % 2 === 0
