@@ -1,6 +1,8 @@
 import {teams} from "@/app/(default)/about-us/data";
 import Image from "next/image";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa6";
+import {motion} from "framer-motion";
+import {makeToUpVariant} from "@/constants/variants.motion";
 
 export default function MeetTeamSection()
 {
@@ -12,7 +14,11 @@ export default function MeetTeamSection()
                 {teams.map((user, index) => {
                     const bigSize = 350, smallSize = 170;
                     return (
-                        <div key={index} className="teams__user flex flex-col items-center">
+                        <motion.div
+                            key={index}
+                            className="teams__user flex flex-col items-center"
+                            variants={makeToUpVariant({delay: 0.2 * index})} initial='hidden' whileInView='visible'
+                        >
                             <Image
                                 src={user.image_url ?? ''}
                                 alt={user.name}
@@ -29,7 +35,7 @@ export default function MeetTeamSection()
                                 <li><a href="#"><FaTwitter size={20}/></a></li>
                                 <li><a href="#"><FaInstagram size={20}/></a></li>
                             </ul>
-                        </div>
+                        </motion.div>
                     )
                 })}
             </div>

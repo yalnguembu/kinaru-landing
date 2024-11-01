@@ -6,6 +6,9 @@ import {useEffect, useState} from "react";
 import {Post} from "@/types";
 import {fetchPosts, tags} from "@/app/(default)/blog/actions";
 import RecentArticles from "@/components/Post/RecentArticles";
+import {motion} from 'framer-motion'
+import {makeToUpVariant} from "@/constants/variants.motion";
+
 
 export default function BlogContent() {
 
@@ -18,11 +21,20 @@ export default function BlogContent() {
         <div className="container">
             <section className="flex flex-col lg:flex-row text-center lg:text-left gap-5 justify-between items-start">
                 <div className="lg:max-w-[50%] flex flex-col items-center lg:items-start gap-3 mx-auto">
-                    <span className="btn-primary-rounded">Nos Resources</span>
-                    <h2 className="text-4xl">Nos Posts <span className="text-primary">Recents</span></h2>
-                    <p>Si dessous, vous trouverez les meilleurs posts les plus recents que nous avons.</p>
+                    <motion.span className="btn-primary-rounded" variants={makeToUpVariant()} initial='hidden' whileInView='visible'>
+                        Nos Resources
+                    </motion.span>
+                    <motion.h2 className="text-4xl" variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible'>
+                        Nos Posts <span className="text-primary">Recents</span>
+                    </motion.h2>
+                    <motion.p variants={makeToUpVariant({delay: 0.3})} initial='hidden' whileInView='visible'>
+                        Si dessous, vous trouverez les meilleurs posts les plus recents que nous avons.
+                    </motion.p>
                 </div>
-                <div className="text-white flex flex-col items-center gap-3 ads-container w-full lg:w-[45%] px-10 py-20 before:rounded-2xl rounded-2xl">
+                <motion.div
+                    className="text-white flex flex-col items-center gap-3 ads-container w-full lg:w-[45%] px-10 py-20 before:rounded-2xl rounded-2xl"
+                    variants={makeToUpVariant({delay: 0.4})} initial='hidden' whileInView='visible'
+                >
                     <FaMailBulk size={64} />
                     <h3>Rejoindre notre carnet d&apos;adresse</h3>
                     <p>Soyez le premier a recevoir nos posts en inbox</p>
@@ -34,7 +46,7 @@ export default function BlogContent() {
                         </div>
                         <p className="text-gray-400 text-sm mt-1">Cliquez sur Envoyez nous autorisera à vous envoyer des messages.</p>
                     </form>
-                </div>
+                </motion.div>
             </section>
             <RecentArticles posts={posts} tags={['Tout', ...tags]}/>
         </div>

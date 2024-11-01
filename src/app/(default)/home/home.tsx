@@ -12,8 +12,10 @@ import AppleStoreButton from "@/components/Buttons/AppleStoreButton";
 import {cn} from "@/libs/utils";
 import Image from "next/image";
 import ActiveUserBar from "@/components/ActiveUserBar";
+import {motion} from 'framer-motion'
 
 import './home.scss'
+import {makeToUpVariant} from "@/constants/variants.motion";
 // import ProcessSection from "@/components/About/ProcessSection";
 // import InformationSection from "@/components/About/InformationSection";
 
@@ -68,7 +70,7 @@ export default function HomeContent()
                         autoplay={{waitForTransition: true}}
                         pagination={{clickable: true, el: '.home-swiper-pagination'}}
                         centeredSlides={true}
-                        className="w-[300px] relative"
+                        className="w-[300px] relative overflow-hidden rounded-3xl bg-black py-3 px-1"
                     >
                         {[7, 8, 5].map((n, index) => {
                             return (
@@ -83,12 +85,12 @@ export default function HomeContent()
                                 </SwiperSlide>
                             )
                         })}
-                        <div className="absolute inset-0 z-10 flex items-center justify-center">
+                        <div className="absolute z-10 flex items-center justify-center">
                             <Image
                                 src="/assets/images/iphonescreen.png"
                                 alt="phone"
-                                width={300}
-                                height={100}
+                                width={310}
+                                height={110}
                             />
                         </div>
                     </Swiper>
@@ -97,26 +99,31 @@ export default function HomeContent()
 
             </section>
 
-            <ActiveUserBar />
+            <motion.div variants={makeToUpVariant()} initial='hidden' whileInView='visible' >
+                <ActiveUserBar />
+            </motion.div>
 
             {/* SERVICES */}
             <section className="flex flex-col gap-3 items-center text-center">
-                <span className="btn-primary-rounded">Services</span>
-                <h2 className="text-3xl">Nos differents <span className="text-primary">services</span><br/></h2>
+                <motion.div variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible'>
+                    <span className="btn-primary-rounded">Services</span>
+                    <h2 className="text-3xl">Nos differents <span className="text-primary">services</span><br/></h2>
+                </motion.div>
                 <div className="flex flex-col gap-10">
                     {/* TASK MANAGE */}
                     {services.map((service, index) => {
                         return (
-                            <SomeComponent
-                                key={index}
-                                image={service.image}
-                                tag={service.tag}
-                                description={service.description}
-                                actionText={service.actionText}
-                                data={service.data}
-                                title={service.title}
-                                className={service.className}
-                            />
+                            <motion.div key={index} variants={makeToUpVariant({delay: 0.1 * index})} initial='hidden' whileInView='visible'>
+                                <SomeComponent
+                                    image={service.image}
+                                    tag={service.tag}
+                                    description={service.description}
+                                    actionText={service.actionText}
+                                    data={service.data}
+                                    title={service.title}
+                                    className={service.className}
+                                />
+                            </motion.div>
                         )
                     })}
 
@@ -136,7 +143,7 @@ export default function HomeContent()
                         const {icon, title, description} = item
                         return (
                             <div key={index} className={cn(
-                                "flex flex-col md:flex-col-reverse items-center gap-3"
+                                "flex flex-col md:flex-col-reverse items-center gap-3 mx-auto"
                             )}>
                                 <span className="py-2 px-3 border-gray-400 text-gray-400 border-2 border-dotted rounded-full">0{index + 1}</span>
                                 <div className="flex flex-col items-center gap-3">
@@ -155,12 +162,12 @@ export default function HomeContent()
 
             {/* OUR CLIENTS */}
             <section className="flex flex-col gap-3 items-center text-center">
-                <span className="btn-primary-rounded">Nous clients</span>
-                <h2 className="text-3xl">
+                <span className="btn-primary-rounded">Nos clients</span>
+                <motion.h2 variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible' className="text-3xl" >
                     <span className="text-primary block">3500+ companies</span>
                     utilisent notre application
-                </h2>
-                <div className="mt-10 flex flex-wrap gap-5 items-center justify-center">
+                </motion.h2>
+                <motion.div variants={makeToUpVariant({delay: 0.4})} initial='hidden' whileInView='visible' className="mt-10 flex flex-wrap gap-5 items-center justify-center">
                     {sponsors.map((image, index) => {
                         return (
                             <div key={index} className="p-5 bg-white rounded-xl">
@@ -173,7 +180,7 @@ export default function HomeContent()
                             </div>
                         )
                     })}
-                </div>
+                </motion.div>
             </section>
 
             {/* */}

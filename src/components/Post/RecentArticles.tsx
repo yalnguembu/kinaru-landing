@@ -2,6 +2,8 @@ import PostListView from "@/components/Post/PostListView";
 import {Post} from "@/types";
 import {useMemo, useState} from "react";
 import {cn} from "@/libs/utils";
+import {motion} from "framer-motion";
+import {makeToUpVariant} from "@/constants/variants.motion";
 
 export type RecentArticlesProps = {
     posts: Post[],
@@ -16,7 +18,7 @@ export default function RecentArticles({posts, tags}: RecentArticlesProps)
     }, [currentTag, posts, tags])
 
     return (
-        <section>
+        <motion.section variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible'>
             <div className="my-10">
                 <h2 className="text-3xl">Recent <span className="text-primary">articles</span></h2>
                 <hr className="my-2" />
@@ -33,6 +35,6 @@ export default function RecentArticles({posts, tags}: RecentArticlesProps)
                 </div>
             </div>
             <PostListView posts={filteredArticles} />
-        </section>
+        </motion.section>
     )
 }
