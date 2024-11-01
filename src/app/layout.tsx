@@ -4,7 +4,7 @@ import './globals.scss'
 export default function Layout({children}: PropsWithChildren)
 {
     return (
-        <html lang="en">
+        <html lang="fr">
             <body>
                 {children}
             </body>
