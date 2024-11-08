@@ -25,7 +25,7 @@ export default function PricingContent() {
                 <motion.h2 className="text-4xl" variants={makeToUpVariant({delay: 0.4})} initial='hidden' whileInView='visible'>
                     Le meilleur <span className="text-primary">forfait d&apos;abonnement</span>
                 </motion.h2>
-                <motion.p className="max-w-[500px]" variants={makeToUpVariant({delay: 0.5})} initial='hidden' whileInView='visible'>
+                <motion.p className="hidden max-w-[500px]" variants={makeToUpVariant({delay: 0.5})} initial='hidden' whileInView='visible'>
                     Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industry&apos;s standard dummy text ever since.
                 </motion.p>
             </section>

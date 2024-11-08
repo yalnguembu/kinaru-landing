@@ -28,7 +28,7 @@ export default function ContactContent() {
                         Ci dessous vous avez tous les moyens par lequel vous pouvez nous contacter.
                     </motion.p>
                 </div>
-                <div className="flex justify-between mt-10">
+                <div className="flex flex-col md:flex-row justify-between gap-5 mt-10">
                     {contactItems.map((item, index) => {
                         return (
                             <motion.div key={index} variants={makeToLeftVariant({delay: 0.2 * index})} initial='hidden' whileInView='visible'>

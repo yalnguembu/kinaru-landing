@@ -46,24 +46,34 @@ export const services = [
             " à des assurances de loyer impyé pour sécuriser vos investissements",
         actionText: "Commencez l'essaie gratuit",
         actionUrl: "#",
-        data: [
-
-        ],
+        data: [],
         className: "flex-col-reverse md:flex-row-reverse"
     },
     {
         tag: 'Maintenance et Conciergerie',
         title: "Une service d'assistance a votre écoute",
-        image: "/assets/images/services/visite_virtuelle.png",
+        image: "/assets/images/about/abtslide_2.png",
         icon: <FaHistory />,
         description: "Besoin d'une réparation rapide ou de conseils pour un aménagement ? " +
                     "Avec Kinaru, vous pouvez réserver des services de maintenance ou de " +
                     "conciergerie directement depuis la plateforme.",
         actionText: "Essayez Maintenant",
         actionUrl: "#",
-        data: [
-
-        ],
+        data: [],
+        className: "flex-col-reverse md:flex-row"
+    },
+    {
+        tag: 'Visite virtuelle',
+        title: "Visites virtuelles en réalité augmentée",
+        image: "/assets/images/services/visite_virtuelle.png",
+        icon: <FaHistory />,
+        description: "Plongez dans l'avenir de la recherche imobilière, explorez " +
+            "les propriétés à 360 degré grace à nos visites virtuelles immersives." +
+            "Visualisez également vos futurs meubles et décorations en réalité augmentéé " +
+            "pour vous progeter plus facilement dans votre futur espace.",
+        actionText: "Essayez Maintenant",
+        actionUrl: "#",
+        data: [],
         className: "flex-col-reverse md:flex-row-reverse"
     },
 ]

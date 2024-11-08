@@ -16,9 +16,9 @@ export default function CompanyStatsSection()
                     return (
                         <li key={index}
                             className={cn(
-                                "rounded-full bg-white/85 w-[250px] h-[250px] flex items-center justify-center border border-primary",
+                                "rounded-full bg-white/85 w-[200px] h-[200px] flex items-center justify-center border border-primary",
                                 "md:w-[150px] md:h-[150px]",
-                                (!isEven) ? '-translate-x-10 -z-0' : 'translate-x-10 z-10',
+                                (!isEven) ? '-translate-x-7 -z-0' : 'translate-x-7 z-10',
                                 (!isEven) ? 'md:translate-x-0' : 'md:translate-x-0',
                             )
                             }>
