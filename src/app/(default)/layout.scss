@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    padding: 0;
+    margin: 0;
+    /* variables */
+    // --primary-color: #3f67f3;
+    --primary-color: #F35725FF;
+    --secondary-color: #ffffff;
+    --background: #fdf7ec;
+    --foreground: #000000;
+    /* scroll bar */
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #fff;
+}
+
+@layer base {
+    body {
+        font-family: sans-serif;
+        background-color: var(--background);
+        color: var(--foreground);
+    }
+    /* TITLES */
+    h1 { @apply text-4xl font-bold ; }
+    h2 { @apply text-3xl font-bold ; }
+    h3 { @apply text-xl font-bold ; }
+    h4 { @apply text-base font-bold ; }
+    h5 { @apply text-sm font-bold ; }
+    h6 { @apply text-xs font-bold ; }
+    /* INPUTS */
+    input, select, textarea {
+        @apply border p-3 rounded-lg text-lg bg-gray-600/70;
+    }
+    /* TABLES */
+    table.table-horizontal tbody {
+        @apply flex flex-col;
+    }
+    table.table-horizontal tr {
+        @apply border-b flex w-full items-center justify-between text-left p-3;
+    }
+    table.table-horizontal tr td, table tr th {
+        @apply min-w-[150px];
+    }
+}
+
+@layer utilities {
+    .container {
+        @apply mx-auto px-3;
+    }
+}
+
+@layer components {
+    .btn-primary-rounded {
+        @apply bg-primary text-white text-base rounded-2xl w-fit px-3 py-1;
+    }
+    .btn-secondary-rounded {
+        @apply btn-primary-rounded items-center text-primary bg-secondary;
+    }
+
+    .btn-action {
+        @apply btn-primary-rounded px-5 py-2 rounded-3xl font-semibold relative transition-all duration-300;
+        transform: translate(-0.25rem, -0.25rem);
+
+        &::after {
+            content: '';
+            @apply inset-1 w-full h-full border border-primary absolute -z-10 rounded-3xl transition-all duration-300;
+        }
+    }
+    .btn-action:hover {
+        @apply translate-x-0 translate-y-0;
+        &::after {
+            @apply inset-0;
+        }
+    }
+}
+
+/* HEADER */
+header {
+    @apply bg-[#fdf7ec] relative;
+    &::after {
+        content: '';
+        @apply absolute w-full h-full blur -z-10 ;
+    }
+}
+
+.navbar {
+    ul > li a {
+        @apply font-bold text-base;
+        &:hover {
+            @apply text-primary transition duration-100;
+        }
+
+        &.active {
+            @apply text-primary;
+        }
+    }
+}
+
+/* ADS SECTIONS */
+.ads-phone {
+    @apply relative;
+    &::before {
+        content: '';
+        @apply absolute w-full h-[80%] bg-primary rounded-2xl -rotate-12 -z-10 top-[20%];
+    }
+}
+
+/* FOOTER */
+footer, #contact-form, .ads-container {
+    @apply relative bg-black/20;
+
+    &::before {
+        content: '';
+        @apply absolute -z-10 inset-0;
+        background: url("/assets/images/footer_bg.png") no-repeat center;
+        background-size: cover;
+    }
+}
+
+footer .links a {
+    @apply rounded-full border border-white p-1;
+}
+
+/* ADS */
+.ads-container-rounded {
+    @apply ads-container rounded-xl;
+    &::before { @apply rounded-xl; }
+}

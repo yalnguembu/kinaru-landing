@@ -1,0 +1,18 @@
+
+.loading-container {
+  @apply z-50 flex bg-white absolute w-screen h-screen top-0 left-0 justify-center items-center text-primary font-bold;
+}
+
+.loading-text {
+  font-size: 3rem;
+  animation: bounce 0.5s linear infinite;
+}
+
+@keyframes bounce {
+  from {
+    scale: 120%;
+  }
+  to {
+    scale: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+
+#about {
+  section {
+    @apply container mx-auto;
+  }
+}
+
+.teams .teams__user
+{
+  @apply p-3 rounded-xl;
+  ul {
+    @apply flex gap-3 my-3 opacity-0 ;
+    li {
+      @apply border rounded-full p-1.5 hover:text-black hover:bg-white;
+    }
+  }
+  &:hover {
+    @apply bg-black text-white;
+    ul { @apply opacity-100; }
+    h3 { @apply text-white; }
+  }
+}
+
+.ads-swiper-pagination {
+  .swiper-pagination-bullet {
+    @apply w-[15px] h-[15px] bg-transparent border-2 border-primary border-opacity-100;
+  }
+  .swiper-pagination-bullet-active {
+    @apply bg-primary;
+  }
+}

@@ -1,0 +1,29 @@
+#home {
+  section {
+    @apply container mx-auto;
+  }
+}
+
+.avatars {
+  @apply flex ;
+}
+
+.avatars > * {
+  @apply border-2 border-white rounded-full w-[80px];
+}
+
+.avatars:last-child {
+  @apply z-50 translate-x-0;
+}
+
+.swiper-pagination-bullet {
+  @apply border-2 border-primary w-[15px] h-[15px];
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary;
+}
+
+#app-screens .swiper-slide-active {
+  @apply scale-110 bg-black;
+}
