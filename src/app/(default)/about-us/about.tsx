@@ -26,7 +26,7 @@ export default function AboutContent() {
                 <div className="flex flex-col gap-5 text-center px-10">
                     <motion.h3 className="text-3xl" variants={makeToUpVariant()} initial='hidden' whileInView='visible'>
                         En savoir plus <span className="text-primary">sur nous</span>
-                    </motion.h3>W
+                    </motion.h3>
                     <motion.p className="mx-auto max-w-[80%]" variants={makeToUpVariant({delay: 0.25})} initial='hidden' whileInView='visible'>
                         Kinaru est une application innovante dédiée à la gestion de locations immobilières. Elle permet aux utilisateurs
                         de rechercher des propriétés à louer et aux propriétaires de suivre la gestion de leurs bien en toute simplicité.
@@ -50,7 +50,7 @@ export default function AboutContent() {
 
 
             {/* MEET OUR TEAM */}
-            <MeetTeamSection />
+            {/* <MeetTeamSection /> */}
 
             <DownloadAppAds />
         </div>

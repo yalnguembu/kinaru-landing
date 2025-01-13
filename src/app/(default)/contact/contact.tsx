@@ -9,7 +9,7 @@ import {makeToLeftVariant, makeToUpVariant} from "@/constants/variants.motion";
 
 const contactItems = [
     {icon: <FaMailBulk size={64}/>, label: "Envoyez un mail", text: "example@gmail.com", href: 'mailto:'},
-    {icon: <FaPhoneSquare size={64}/>, label: "Appellez-nous", text: "+11234567890", href: 'tel:+11234567890'},
+    {icon: <FaPhoneSquare size={64}/>, label: "Appellez-nous", text: "+237656945851", href: 'tel:+237656945851'},
     {icon: <FaMapLocation size={64}/>, label: "Notre position", text: "Open Google Maps", href: 'map:'}
 ]
 

@@ -36,7 +36,7 @@ export default function HomeContent()
                         backSpeed={40}
                         loop={true}
                     />
-                    <h2><span className="text-primary">Kinaru </span> - La cle de votre <br />futur chez vous.</h2>
+                    <h2><span className="text-primary">Kinaru </span> - Trouver un logement <br />n'a jamais été aussi simple.</h2>
                     <p>Que vous soyez à la recherche d&apos;un apartement moderne, d&apos;un studio, <br /> d&apos;une chambre ou autre, Kinaru simplifie chaque étapes de votre parcours.</p>
                     <div className='avatars'>
                         {avatars.map((image, index) => {
@@ -72,7 +72,7 @@ export default function HomeContent()
                         centeredSlides={true}
                         className="w-[300px] relative overflow-hidden rounded-3xl bg-black py-3 px-1"
                     >
-                        {[7, 8, 5].map((n, index) => {
+                        {[7, 8, 10].map((n, index) => {
                             return (
                                 <SwiperSlide key={index} className="w-full h-auto flex items-center justify-center">
                                     <Image
@@ -161,7 +161,7 @@ export default function HomeContent()
             </section>
 
             {/* OUR CLIENTS */}
-            <section className="flex flex-col gap-3 items-center text-center">
+            {/* <section className="flex flex-col gap-3 items-center text-center">
                 <span className="btn-primary-rounded">Nos clients</span>
                 <motion.h2 variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible' className="text-3xl" >
                     <span className="text-primary block">3500+ companies</span>
@@ -181,7 +181,7 @@ export default function HomeContent()
                         )
                     })}
                 </motion.div>
-            </section>
+            </section> */}
 
             {/* */}
             <section></section>

@@ -45,7 +45,7 @@ export default function RatingSection()
                 })}
             </Swiper>
             <div className="ads-swiper-pagination flex justify-center gap-2 mt-5 w-fit mx-auto"/>
-            <Swiper
+            {/* <Swiper
                 loop
                 modules={[Autoplay]}
                 slidesPerView={'auto'}
@@ -60,7 +60,7 @@ export default function RatingSection()
                         </SwiperSlide>
                     )
                 })}
-            </Swiper>
+            </Swiper> */}
         </section>
 
     )
