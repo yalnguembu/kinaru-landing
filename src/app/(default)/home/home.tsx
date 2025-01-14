@@ -3,7 +3,6 @@
 import DownloadAppAds from "@/components/Ads/DownloadAppAds";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, EffectCoverflow, Pagination} from "swiper/modules";
-import {sponsors} from "@/app/(default)/about-us/data";
 import {avatars, services, steps} from "@/app/(default)/home/data";
 import SomeComponent from "@/components/SomeComponent";
 import {ReactTyped} from "react-typed";
@@ -36,7 +35,7 @@ export default function HomeContent()
                         backSpeed={40}
                         loop={true}
                     />
-                    <h2><span className="text-primary">Kinaru </span> - Trouver un logement <br />n'a jamais été aussi simple.</h2>
+                    <h2><span className="text-primary">Kinaru </span> - Trouver un logement <br />n&apos;a jamais été aussi simple.</h2>
                     <p>Que vous soyez à la recherche d&apos;un apartement moderne, d&apos;un studio, <br /> d&apos;une chambre ou autre, Kinaru simplifie chaque étapes de votre parcours.</p>
                     <div className='avatars'>
                         {avatars.map((image, index) => {
@@ -160,30 +159,7 @@ export default function HomeContent()
                 <a href="#" className="btn-action">Commencez maintenant</a>
             </section>
 
-            {/* OUR CLIENTS */}
-            {/* <section className="flex flex-col gap-3 items-center text-center">
-                <span className="btn-primary-rounded">Nos clients</span>
-                <motion.h2 variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible' className="text-3xl" >
-                    <span className="text-primary block">3500+ companies</span>
-                    utilisent notre application
-                </motion.h2>
-                <motion.div variants={makeToUpVariant({delay: 0.4})} initial='hidden' whileInView='visible' className="mt-10 flex flex-wrap gap-5 items-center justify-center">
-                    {sponsors.map((image, index) => {
-                        return (
-                            <div key={index} className="p-5 bg-white rounded-xl">
-                                <Image
-                                    src={image}
-                                    alt={'client-' + index}
-                                    width={150}
-                                    height={50}
-                                />
-                            </div>
-                        )
-                    })}
-                </motion.div>
-            </section> */}
-
-            {/* */}
+           
             <section></section>
 
             {/* APP SCREENS */}

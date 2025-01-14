@@ -3,7 +3,7 @@
 import Stars from "@/components/Ui/Stars";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation, Pagination} from "swiper/modules";
-import {sponsors, userRates} from "@/app/(default)/about-us/data";
+import { userRates} from "@/app/(default)/about-us/data";
 import Image from "next/image";
 
 export default function RatingSection()
@@ -45,22 +45,7 @@ export default function RatingSection()
                 })}
             </Swiper>
             <div className="ads-swiper-pagination flex justify-center gap-2 mt-5 w-fit mx-auto"/>
-            {/* <Swiper
-                loop
-                modules={[Autoplay]}
-                slidesPerView={'auto'}
-                autoplay={{waitForTransition: true, delay: 1500}}
-                className="mt-10"
-            >
-                {sponsors.map((image, index) => {
-                    return (
-                        <SwiperSlide key={index}
-                                     className="item w-fit mr-20 bg-white rounded-xl px-6 shadow h-[100px] flex items-center">
-                            <Image src={image} alt={'sponsors-' + index} width={150} height={50}/>
-                        </SwiperSlide>
-                    )
-                })}
-            </Swiper> */}
+          
         </section>
 
     )

@@ -1,7 +1,6 @@
 'use client'
 
 import DownloadAppAds from "@/components/Ads/DownloadAppAds";
-import MeetTeamSection from "@/components/About/MeetTeamSection";
 import RatingSection from "@/components/About/RatingSection";
 import MainAboutSection from "@/components/About/MainAboutSection";
 import AboutSliderSection from "@/components/About/AboutSliderSection";
@@ -48,9 +47,6 @@ export default function AboutContent() {
                 <RatingSection />
             </motion.div>
 
-
-            {/* MEET OUR TEAM */}
-            {/* <MeetTeamSection /> */}
 
             <DownloadAppAds />
         </div>
