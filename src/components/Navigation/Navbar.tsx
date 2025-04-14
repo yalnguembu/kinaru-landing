@@ -16,7 +16,7 @@ export default function Navbar({collapsed = true}: NavbarProps)
         { href: "/about-us", label: "A Propos" },
         { href: "/reviews", label: "Revues" },
         { href: "/pricing", label: "Tarifs" },
-        { href: "/blog", label: "Blog" },
+        // { href: "/blog", label: "Blog" },
         { href: "/contact", label: "Contact" },
         { href: "/faq", label: "Faq" }
     ];

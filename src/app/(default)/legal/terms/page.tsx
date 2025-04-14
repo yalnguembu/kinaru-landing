@@ -357,30 +357,6 @@ export default function TermsScreen() {
           </p>
         </div>
       </section>
-
-      <section className="space-y-4">
-        <h3 className="text-xl font-semibold">16. Contact</h3>
-        <div>
-          <p>Pour toute question, réclamation, ou assistance :</p>
-          <ul className="list-none space-y-1">
-            <li>
-              <strong>Email</strong> :{" "}
-              <a href="mailto:support@kinaru.cm" className="text-blue-600">
-                support@kinaru.cm
-              </a>
-            </li>
-            <li>
-              <strong>WhatsApp/Téléphone</strong> : +237 6XX XXX XXX (8h-18h, jours ouvrables)
-            </li>
-            <li>
-              <strong>Site web</strong> :{" "}
-              <a href="https://www.kinaru.cm" className="text-blue-600">
-                www.kinaru.cm
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
     </div>
   );
 }
