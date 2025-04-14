@@ -35,9 +35,7 @@ export default function HomeContent() {
             loop={true}
           />
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="highlight-text">Kinaru</span> - La clé de votre{" "}
-            <br />
-            futur chez vous
+            <span className="highlight-text">Kinaru</span> - Trouver un logement n'a jamais été aussi simple{" "}
           </h1>
           <p className="text-lg max-w-2xl">
             Que vous soyez à la recherche d&apos;un appartement moderne,

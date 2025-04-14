@@ -6,11 +6,12 @@ import ContactItem from "@/components/Contact/ContactItem";
 import ContactForm from "@/components/Contact/ContactForm";
 import {motion} from "framer-motion";
 import {makeToLeftVariant, makeToUpVariant} from "@/constants/variants.motion";
+import { CONTACT_MAIL, LOCATION, PHONE } from "@/constants";
 
 const contactItems = [
-    {icon: <FaMailBulk size={64}/>, label: "Envoyez un mail", text: "example@gmail.com", href: 'mailto:'},
-    {icon: <FaPhoneSquare size={64}/>, label: "Appellez-nous", text: "+11234567890", href: 'tel:+11234567890'},
-    {icon: <FaMapLocation size={64}/>, label: "Notre position", text: "Open Google Maps", href: 'map:'}
+    {icon: <FaMailBulk size={64}/>, label: "Envoyez un mail", text: CONTACT_MAIL, href: 'mailto:' + CONTACT_MAIL},
+    {icon: <FaPhoneSquare size={64}/>, label: "Appellez-nous", text: PHONE, href: 'tel:' + PHONE.replaceAll(/ /g, '')},
+    {icon: <FaMapLocation size={64}/>, label: "Notre position", text: LOCATION, href: 'map:'}
 ]
 
 export default function ContactContent() {
@@ -28,7 +29,7 @@ export default function ContactContent() {
                         Ci dessous vous avez tous les moyens par lequel vous pouvez nous contacter.
                     </motion.p>
                 </div>
-                <div className="flex flex-col md:flex-row justify-between gap-5 mt-10">
+                <div className="flex flex-col md:flex-row justify-evenly gap-5 mt-10">
                     {contactItems.map((item, index) => {
                         return (
                             <motion.div key={index} variants={makeToLeftVariant({delay: 0.2 * index})} initial='hidden' whileInView='visible'>

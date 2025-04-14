@@ -1,3 +1,36 @@
+import {Metadata} from "next";
+import { getAbsoluteUrl } from "@/constants";
+
+export const metadata: Metadata = {
+  title: 'Politique de Confidentialité | Kinaru - Protection de vos données',
+  description: 'Découvrez comment Kinaru protège vos données personnelles. Notre politique de confidentialité détaille la collecte, l\'utilisation et la protection de vos informations.',
+  keywords: 'politique confidentialité Kinaru, protection données, RGPD Cameroun, vie privée application, sécurité données personnelles, confidentialité immobilier',
+  openGraph: {
+    title: 'Politique de Confidentialité Kinaru',
+    description: 'Comment Kinaru protège vos données personnelles et respecte votre vie privée lors de l\'utilisation de notre plateforme immobilière.',
+    url: getAbsoluteUrl('legal/privacy'),
+    siteName: 'Kinaru',
+    images: [
+      {
+        url: getAbsoluteUrl('images/privacy-og.jpg'),
+        width: 1200,
+        height: 630,
+        alt: 'Politique de confidentialité Kinaru',
+      }
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Politique de Confidentialité Kinaru',
+    description: 'Comment Kinaru protège vos données personnelles et respecte votre vie privée lors de l\'utilisation de notre plateforme immobilière.',
+    images: [getAbsoluteUrl('images/privacy-twitter.jpg')],
+    creator: '@KinaruApp',
+    site: '@KinaruApp'
+  }
+}
+
 export default function PrivacyScreen() {
   return (
     <div className="space-y-6">

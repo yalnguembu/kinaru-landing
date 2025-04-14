@@ -1,4 +1,36 @@
 import { CONTACT_MAIL } from "@/constants";
+import { Metadata } from "next";
+import { getAbsoluteUrl } from "@/constants";
+
+export const metadata: Metadata = {
+  title: 'Mentions Légales | Kinaru - Informations juridiques',
+  description: 'Consultez les mentions légales de Kinaru. Informations sur l\'éditeur, l\'hébergement et les droits de propriété intellectuelle de notre plateforme immobilière.',
+  keywords: 'mentions légales Kinaru, informations juridiques, éditeur Kinaru, hébergement application, propriété intellectuelle, droits auteur Kinaru',
+  openGraph: {
+    title: 'Mentions Légales Kinaru',
+    description: 'Informations juridiques concernant l\'éditeur, l\'hébergement et les droits de propriété intellectuelle de la plateforme Kinaru.',
+    url: getAbsoluteUrl('legal/notice'),
+    siteName: 'Kinaru',
+    images: [
+      {
+        url: getAbsoluteUrl('images/legal-og.jpg'),
+        width: 1200,
+        height: 630,
+        alt: 'Mentions légales Kinaru',
+      }
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mentions Légales Kinaru',
+    description: 'Informations juridiques concernant l\'éditeur, l\'hébergement et les droits de propriété intellectuelle de la plateforme Kinaru.',
+    images: [getAbsoluteUrl('images/legal-twitter.jpg')],
+    creator: '@KinaruApp',
+    site: '@KinaruApp'
+  }
+}
 
 export default function LegalNoticeScreen() {
     return (

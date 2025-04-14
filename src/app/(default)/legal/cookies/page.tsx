@@ -2,8 +2,33 @@ import { CONTACT_MAIL, LOCATION } from "@/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de Cookies | Kinaru",
-  description: "Informations sur l'utilisation des cookies et technologies similaires par l'application Kinaru"
+  title: "Politique de Cookies | Kinaru - Suivi et technologies utilisées",
+  description: "Informations sur l'utilisation des cookies et technologies similaires par l'application Kinaru. Découvrez comment nous utilisons ces technologies et comment les contrôler.",
+  keywords: "cookies Kinaru, politique cookies, traceurs application, technologies suivi, préférences cookies, confidentialité mobile",
+  openGraph: {
+    title: "Politique de Cookies Kinaru",
+    description: "Comment Kinaru utilise les cookies et technologies similaires pour améliorer votre expérience sur notre plateforme immobilière.",
+    url: "https://www.kinaru.app/legal/cookies",
+    siteName: "Kinaru",
+    images: [
+      {
+        url: "https://www.kinaru.app/images/cookies-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Politique de cookies Kinaru",
+      }
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Politique de Cookies Kinaru",
+    description: "Comment Kinaru utilise les cookies et technologies similaires pour améliorer votre expérience sur notre plateforme immobilière.",
+    images: ["https://www.kinaru.app/images/cookies-twitter.jpg"],
+    creator: "@KinaruApp",
+    site: "@KinaruApp"
+  }
 };
 
 export default function CookiesPolicyPage() {
