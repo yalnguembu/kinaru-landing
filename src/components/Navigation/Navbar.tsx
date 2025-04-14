@@ -3,6 +3,7 @@
 import NavLink from "./NavLink";
 import {cn} from "@/libs/utils";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export type NavbarProps = {
     collapsed?: boolean;
@@ -103,15 +104,15 @@ export default function Navbar({collapsed = true}: NavbarProps)
                 whileTap={!collapsed ? "tap" : {}}
                 className={collapsed ? "" : "w-full"}
             >
-                <NavLink 
-                    href="#" 
+                <Link 
+                    href="/download" 
                     className={cn(
                         "btn-action",
                         !collapsed ? "block w-full text-center mt-2 mb-2" : ""
                     )}
                 >
                     Télécharger
-                </NavLink>
+                </Link>
             </motion.div>
         </nav>
     )
