@@ -1,13 +1,10 @@
-import {PropsWithChildren} from "react";
-import './globals.scss'
+import { PropsWithChildren } from "react";
+import "./globals.scss";
 
-export default function Layout({children}: PropsWithChildren)
-{
-    return (
-        <html lang="fr">
-            <body>
-                {children}
-            </body>
-        </html>
-    )
+export default function Layout({ children }: PropsWithChildren) {
+  return (
+    <html lang="fr">
+      <body>{children}</body>
+    </html>
+  );
 }

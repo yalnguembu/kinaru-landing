@@ -21,11 +21,17 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "var(--primary-color)",
+        primary: {
+          DEFAULT: "var(--primary-color)",
+          light: "rgba(243, 87, 37, 0.1)" // 10% opacity version of primary
+        },
         secondary: "var(--secondary-color)"
       },
     },
   },
   plugins: [],
+  safelist: [
+    'bg-primary-light'
+  ]
 };
 export default config;

@@ -1,234 +1,324 @@
-'use client'
+"use client";
 
 import DownloadAppAds from "@/components/Ads/DownloadAppAds";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, EffectCoverflow, Pagination} from "swiper/modules";
-import {sponsors} from "@/app/(default)/about-us/data";
-import {avatars, services, steps} from "@/app/(default)/home/data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import { sponsors } from "@/app/(default)/about-us/data";
+import { avatars, services, steps } from "@/app/(default)/home/data";
 import SomeComponent from "@/components/SomeComponent";
-import {ReactTyped} from "react-typed";
+import { ReactTyped } from "react-typed";
 import GooglePlayButton from "@/components/Buttons/GooglePlayButton";
 import AppleStoreButton from "@/components/Buttons/AppleStoreButton";
-import {cn} from "@/libs/utils";
+import { cn } from "@/libs/utils";
 import Image from "next/image";
 import ActiveUserBar from "@/components/ActiveUserBar";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
-import './home.scss'
-import {makeToUpVariant} from "@/constants/variants.motion";
-// import ProcessSection from "@/components/About/ProcessSection";
-// import InformationSection from "@/components/About/InformationSection";
+import "./home.scss";
+import { makeToUpVariant } from "@/constants/variants.motion";
 
-export default function HomeContent()
-{
-    return (
-        <div id="home" className="flex flex-col gap-10">
-            {/* MAIN SECTION */}
-            <section className="text-center w-fit mx-auto flex flex-col lg:flex-row justify-evenly gap-10">
-                <div className=" flex flex-col flex-1 gap-5 items-center">
-                    <ReactTyped
-                        className="text-primary font-bold"
-                        strings={[
-                            "Revolutionnez votre experience immonbiliere",
-                            "En rejoignant Kinaru"
-                        ]}
-                        typeSpeed={40}
-                        backSpeed={40}
-                        loop={true}
-                    />
-                    <h2><span className="text-primary">Kinaru </span> - La cle de votre <br />futur chez vous.</h2>
-                    <p>Que vous soyez à la recherche d&apos;un apartement moderne, d&apos;un studio, <br /> d&apos;une chambre ou autre, Kinaru simplifie chaque étapes de votre parcours.</p>
-                    <div className='avatars'>
-                        {avatars.map((image, index) => {
-                            return (
-                                <Image
-                                    src={image}
-                                    alt={'avatar-' + index}
-                                    width={64}
-                                    height={64}
-                                    key={index}
-                                />
-                            )
-                        })}
-                        <Image src="/assets/images/icons/play.svg" alt='icon-play' width={64} height={64} />
-                    </div>
-                    <span className="font-bold text-xl">12M+ Active users</span>
-                    <span>La meilleure plateforme de gestion <br/> immobilière</span>
-                    <div className="flex gap-10 mt-3">
-                        <GooglePlayButton/>
-                        <AppleStoreButton/>
-                    </div>
-                </div>
-                <div className={cn(
-                    "ads-phone flex flex-col gap-5 items-center",
-                    "flex-1 mx-auto before:max-w-[300px] before:top-[8%]"
-                )}>
-                    <Swiper
-                        loop
-                        modules={[Autoplay, Pagination]}
-                        slidesPerView={1}
-                        autoplay={{waitForTransition: true}}
-                        pagination={{clickable: true, el: '.home-swiper-pagination'}}
-                        centeredSlides={true}
-                        className="w-[300px] relative overflow-hidden rounded-3xl bg-black py-3 px-1"
-                    >
-                        {[7, 8, 5].map((n, index) => {
-                            return (
-                                <SwiperSlide key={index} className="w-full h-auto flex items-center justify-center">
-                                    <Image
-                                        src={`/assets/images/designs/${n}.png`}
-                                        alt={'design-' + n}
-                                        width={280}
-                                        height={100}
-                                        className="rounded-3xl"
-                                    />
-                                </SwiperSlide>
-                            )
-                        })}
-                        <div className="absolute z-10 flex items-center justify-center">
-                            <Image
-                                src="/assets/images/iphonescreen.png"
-                                alt="phone"
-                                width={310}
-                                height={110}
-                            />
-                        </div>
-                    </Swiper>
-                    <div className="home-swiper-pagination"/>
-                </div>
-
-            </section>
-
-            <motion.div variants={makeToUpVariant()} initial='hidden' whileInView='visible' >
-                <ActiveUserBar />
-            </motion.div>
-
-            {/* SERVICES */}
-            <section className="flex flex-col gap-3 items-center text-center">
-                <motion.div variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible'>
-                    <span className="btn-primary-rounded">Services</span>
-                    <h2 className="text-3xl">Nos differents <span className="text-primary">services</span><br/></h2>
-                </motion.div>
-                <div className="flex flex-col gap-10">
-                    {/* TASK MANAGE */}
-                    {services.map((service, index) => {
-                        return (
-                            <motion.div key={index} variants={makeToUpVariant({delay: 0.1 * index})} initial='hidden' whileInView='visible'>
-                                <SomeComponent
-                                    image={service.image}
-                                    tag={service.tag}
-                                    description={service.description}
-                                    actionText={service.actionText}
-                                    data={service.data}
-                                    title={service.title}
-                                    className={service.className}
-                                />
-                            </motion.div>
-                        )
-                    })}
-
-                    {/*/!* PROCESS *!/*/}
-                    {/*<ProcessSection />*/}
-                    {/*/!* INFORMATION *!/*/}
-                    {/*<InformationSection />*/}
-                </div>
-            </section>
-
-            {/* STEPS */}
-            <section className="ads-container-rounded p-10 flex flex-col gap-3 items-center text-white">
-                <span className="btn-primary-rounded">Rapide et Facile</span>
-                <h2>Tout en seulement 03 étapes</h2>
-                <div className="flex flex-col md:flex-row gap-10 mt-5 items-start mb-10 text-center">
-                    {steps.map((item, index) => {
-                        const {icon, title, description} = item
-                        return (
-                            <div key={index} className={cn(
-                                "flex flex-col md:flex-col-reverse items-center gap-3 mx-auto"
-                            )}>
-                                <span className="py-2 px-3 border-gray-400 text-gray-400 border-2 border-dotted rounded-full">0{index + 1}</span>
-                                <div className="flex flex-col items-center gap-3">
-                                    <span className="w-fit flex flex-col p-5 bg-white rounded-xl">
-                                        <span className="bg-primary p-2 rounded-xl">{icon}</span>
-                                    </span>
-                                    <h3>{title}</h3>
-                                    <p>{description}</p>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-                <a href="#" className="btn-action">Commencez maintenant</a>
-            </section>
-
-            {/* OUR CLIENTS */}
-            <section className="flex flex-col gap-3 items-center text-center">
-                <span className="btn-primary-rounded">Nos clients</span>
-                <motion.h2 variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible' className="text-3xl" >
-                    <span className="text-primary block">3500+ companies</span>
-                    utilisent notre application
-                </motion.h2>
-                <motion.div variants={makeToUpVariant({delay: 0.4})} initial='hidden' whileInView='visible' className="mt-10 flex flex-wrap gap-5 items-center justify-center">
-                    {sponsors.map((image, index) => {
-                        return (
-                            <div key={index} className="p-5 bg-white rounded-xl">
-                                <Image
-                                    src={image}
-                                    alt={'client-' + index}
-                                    width={150}
-                                    height={50}
-                                />
-                            </div>
-                        )
-                    })}
-                </motion.div>
-            </section>
-
-            {/* */}
-            <section></section>
-
-            {/* APP SCREENS */}
-            <section id="apps-creens" className="flex flex-col gap-3 text-center items-center">
-                <span className="btn-primary-rounded">Interfaces</span>
-                <h2 className="text-3xl">Des <span className="text-primary">interfaces</span> intuitives</h2>
-                <Swiper
-                    loop
-                    modules={[Autoplay, Pagination, EffectCoverflow]}
-                    centeredSlides={true}
-                    pagination={{clickable: true, el: '.design-swiper-pagination'}}
-                    slidesPerView={'auto'}
-                    effect={'coverflow'}
-                    coverflowEffect={{
-                        rotate: 0,
-                        stretch: 0,
-                        scale: 0.9,
-                    }}
-                    slideActiveClass='swiper-slide-active'
-                    autoplay={{delay: 2000, waitForTransition: true}}
-                    className="mt-5"
-                >
-                    {(new Array(9).fill(0)).map((_, index) => {
-                        const n = index + 1
-                        const image = `/assets/images/designs/${n}.png`
-                        return (
-                            <SwiperSlide key={index} className="border-2 rounded-3xl w-fit mr-5">
-                                <Image
-                                    src={image}
-                                    alt={'design-' + n}
-                                    width={270}
-                                    height={100}
-                                />
-                            </SwiperSlide>
-                        )
-                    })}
-                </Swiper>
-                <div className="design-swiper-pagination flex gap-1 mt-3 items-center justify-center"/>
-            </section>
-
-            {/* */}
-            <DownloadAppAds/>
-
-            {/* */}
-            <section></section>
+export default function HomeContent() {
+  return (
+    <div id="home" className="flex flex-col gap-16">
+      {/* MAIN SECTION - HERO */}
+      <section className="text-center w-full mx-auto flex flex-col lg:flex-row justify-evenly gap-10 py-16">
+        <div className="flex flex-col flex-1 gap-5 items-center">
+          <ReactTyped
+            className="text-primary font-bold text-xl"
+            strings={[
+              "Révolutionnez votre expérience immobilière",
+              "Simplifiez vos recherches de logement",
+              "Gérez vos biens en toute simplicité",
+            ]}
+            typeSpeed={40}
+            backSpeed={40}
+            loop={true}
+          />
+          <h1 className="text-4xl md:text-5xl font-bold">
+            <span className="highlight-text">Kinaru</span> - La clé de votre{" "}
+            <br />
+            futur chez vous
+          </h1>
+          <p className="text-lg max-w-2xl">
+            Que vous soyez à la recherche d&apos;un appartement moderne,
+            d&apos;un studio, d&apos;une chambre ou autre, Kinaru simplifie
+            chaque étape de votre parcours immobilier grâce à notre application
+            mobile.
+          </p>
+          <div className="avatars mt-4">
+            {avatars.map((image, index) => {
+              return (
+                <Image
+                  src={image}
+                  alt={"Utilisateur Kinaru satisfait"}
+                  width={64}
+                  height={64}
+                  key={index}
+                />
+              );
+            })}
+            <Image
+              src="/assets/images/icons/play.svg"
+              alt="Démarrer avec Kinaru"
+              width={64}
+              height={64}
+            />
+          </div>
+          <span className="font-bold text-xl">12M+ Utilisateurs actifs</span>
+          <span className="text-lg">
+            La meilleure plateforme mobile de gestion <br /> immobilière en
+            Afrique
+          </span>
+          <motion.div
+            variants={makeToUpVariant({ delay: 0.3 })}
+            initial="hidden"
+            whileInView="visible"
+            className="flex gap-6 mt-5"
+          >
+            <GooglePlayButton />
+            <AppleStoreButton />
+          </motion.div>
         </div>
-    )
+        <motion.div
+          variants={makeToUpVariant({ delay: 0.5 })}
+          initial="hidden"
+          whileInView="visible"
+          className={cn(
+            "ads-phone flex flex-col gap-5 items-center",
+            "flex-1 mx-auto before:max-w-[300px] before:top-[8%]"
+          )}
+        >
+          <Swiper
+            loop
+            modules={[Autoplay, Pagination]}
+            slidesPerView={1}
+            autoplay={{ waitForTransition: true, delay: 3000 }}
+            pagination={{ clickable: true, el: ".home-swiper-pagination" }}
+            centeredSlides={true}
+            className="w-[300px] relative overflow-hidden rounded-3xl bg-black py-3 px-1 shadow-2xl"
+          >
+            {[7, 8, 5].map((n, index) => {
+              return (
+                <SwiperSlide
+                  key={index}
+                  className="w-full h-auto flex items-center justify-center"
+                >
+                  <Image
+                    src={`/assets/images/designs/${n}.png`}
+                    alt={
+                      "Interface Kinaru - Recherche et gestion immobilière simplifiées"
+                    }
+                    width={280}
+                    height={100}
+                    className="rounded-3xl"
+                  />
+                </SwiperSlide>
+              );
+            })}
+            <div className="absolute z-10 flex items-center justify-center">
+              <Image
+                src="/assets/images/iphonescreen.png"
+                alt="Application mobile Kinaru"
+                width={310}
+                height={110}
+              />
+            </div>
+          </Swiper>
+          <div className="home-swiper-pagination" />
+        </motion.div>
+      </section>
+
+      <motion.div
+        variants={makeToUpVariant()}
+        initial="hidden"
+        whileInView="visible"
+      >
+        <ActiveUserBar />
+      </motion.div>
+
+      {/* SERVICES */}
+      <section
+        className="flex flex-col gap-10 items-center text-center"
+        id="services"
+      >
+        <motion.div
+          variants={makeToUpVariant({ delay: 0.2 })}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <span className="btn-primary-rounded">Services Mobiles</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-3">
+            Découvrez nos <span className="highlight-text">services</span>{" "}
+            immobiliers
+          </h2>
+          <p className="text-lg max-w-3xl mx-auto mt-4">
+            Notre application mobile vous offre une gamme complète de services
+            pour faciliter toutes vos démarches immobilières en quelques clics.
+          </p>
+        </motion.div>
+        <div className="flex flex-col gap-16">
+          {/* SERVICES LIST */}
+          {services.map((service, index) => {
+            return (
+              <motion.div
+                key={index}
+                variants={makeToUpVariant({ delay: 0.1 * index })}
+                initial="hidden"
+                whileInView="visible"
+                className="service-card"
+              >
+                <SomeComponent
+                  image={service.image}
+                  tag={service.tag}
+                  description={service.description}
+                  actionText={service.actionText}
+                  data={service.data}
+                  title={service.title}
+                  className={service.className}
+                />
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* STEPS */}
+      <section
+        className="ads-container-rounded p-10 flex flex-col gap-6 items-center text-white"
+        id="getting-started"
+      >
+        <span className="btn-primary-rounded">Installation Rapide</span>
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Commencez en seulement 3 étapes
+        </h2>
+        <div className="flex flex-col md:flex-row gap-10 mt-8 items-stretch mb-10 text-center w-full max-w-5xl">
+          {steps.map((item, index) => {
+            const { icon, title, description } = item;
+            return (
+              <motion.div
+                key={index}
+                variants={makeToUpVariant({ delay: 0.2 * index })}
+                initial="hidden"
+                whileInView="visible"
+                className={cn(
+                  "flex flex-col md:flex-col-reverse items-center gap-5 mx-auto bg-white/10 p-6 rounded-xl backdrop-blur-sm",
+                  "flex-1 hover:transform hover:scale-105 transition-all duration-300"
+                )}
+              >
+                <span className="py-2 px-4 border-gray-400 text-gray-200 border-2 border-dotted rounded-full font-bold">
+                  0{index + 1}
+                </span>
+                <div className="flex flex-col items-center gap-4">
+                  <span className="w-fit flex flex-col p-5 bg-white rounded-xl shadow-lg">
+                    <span className="bg-primary p-3 rounded-xl">{icon}</span>
+                  </span>
+                  <h3 className="text-xl font-bold">{title}</h3>
+                  <p>{description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+        <a href="#" className="btn-action">
+          Télécharger maintenant
+        </a>
+      </section>
+
+      {/* OUR CLIENTS */}
+      <section
+        className="flex flex-col gap-8 items-center text-center"
+        id="clients"
+      >
+        <span className="btn-primary-rounded">Ils nous font confiance</span>
+        <motion.h2
+          variants={makeToUpVariant({ delay: 0.2 })}
+          initial="hidden"
+          whileInView="visible"
+          className="text-3xl md:text-4xl font-bold"
+        >
+          <span className="highlight-text block mb-2">
+            Plus de 3500 entreprises
+          </span>
+          utilisent notre application mobile
+        </motion.h2>
+        <motion.div
+          variants={makeToUpVariant({ delay: 0.4 })}
+          initial="hidden"
+          whileInView="visible"
+          className="mt-10 flex flex-wrap gap-8 items-center justify-center"
+        >
+          {sponsors.map((image, index) => {
+            return (
+              <div
+                key={index}
+                className="p-5 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow"
+              >
+                <Image
+                  src={image}
+                  alt={"Partenaire Kinaru - " + index}
+                  width={150}
+                  height={50}
+                />
+              </div>
+            );
+          })}
+        </motion.div>
+      </section>
+
+      {/* APP SCREENS */}
+      <section
+        id="app-screens"
+        className="flex flex-col gap-8 text-center items-center py-16"
+      >
+        <span className="btn-primary-rounded">Application Mobile</span>
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Des <span className="highlight-text">interfaces</span> intuitives pour
+          tous vos besoins
+        </h2>
+        <p className="text-lg max-w-3xl">
+          Notre application mobile Kinaru est conçue pour offrir une expérience
+          utilisateur exceptionnelle, que vous soyez propriétaire, locataire ou
+          à la recherche d'un nouveau logement.
+        </p>
+        <Swiper
+          loop
+          modules={[Autoplay, Pagination, EffectCoverflow]}
+          centeredSlides={true}
+          pagination={{ clickable: true, el: ".design-swiper-pagination" }}
+          slidesPerView={"auto"}
+          effect={"coverflow"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            scale: 0.9,
+          }}
+          slideActiveClass="swiper-slide-active"
+          autoplay={{ delay: 2000, waitForTransition: true }}
+          className="mt-10 w-full"
+        >
+          {new Array(9).fill(0).map((_, index) => {
+            const n = index + 1;
+            const image = `/assets/images/designs/${n}.png`;
+            return (
+              <SwiperSlide
+                key={index}
+                className="border-2 rounded-3xl w-fit mr-5 shadow-lg"
+              >
+                <Image
+                  src={image}
+                  alt={"Interface Kinaru - Fonctionnalité " + n}
+                  width={270}
+                  height={100}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <div className="design-swiper-pagination flex gap-1 mt-6 items-center justify-center" />
+      </section>
+
+      {/* DOWNLOAD APP SECTION */}
+      <DownloadAppAds />
+    </div>
+  );
 }

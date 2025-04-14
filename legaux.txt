@@ -1,0 +1,157 @@
+Politique de confidentialité de Kinaru
+
+Dernière mise à jour : 11 avril 2025
+
+Chez Sprinter IT, nous nous engageons à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos informations lorsque vous utilisez notre application mobile Kinaru (ci-après dénommée "Service"). Elle vous informe également de vos droits en matière de confidentialité et de la manière dont la loi vous protège. En utilisant le Service, vous acceptez les pratiques décrites dans cette politique.
+
+ 
+Interprétation et définitions
+Interprétation
+
+Les mots commençant par une majuscule ont des significations spécifiques définies ci-dessous. Ces définitions s’appliquent au singulier comme au pluriel.
+
+Définitions
+
+● Compte : Un compte unique créé pour vous permettre d’accéder à notre Service ou à certaines de ses fonctionnalités.
+● Société (également appelée "Nous", "Notre", "Nos") : Sprinter IT, basée à Douala, Cameroun.
+● Application : Kinaru, le logiciel mobile fourni par la Société.
+● Pays : Cameroun.
+● Appareil : Tout dispositif utilisé pour accéder au Service (smartphone, tablette, etc.).
+● Données personnelles : Toute information permettant d’identifier une personne physique.
+● Service : L’application Kinaru.
+● Prestataire de services : Toute entité ou personne traitant des données pour le compte de la Société.
+● Données d’utilisation : Données collectées automatiquement lors de l’utilisation du Service (par exemple, durée de visite, adresse IP).
+● Vous : L’utilisateur individuel ou l’entité au nom de laquelle le Service est utilisé.
+ 
+Collecte et utilisation de vos données personnelles
+Types de données collectées
+Données personnelles
+
+Lorsque vous utilisez Kinaru, nous pouvons collecter les informations suivantes avec votre consentement explicite :
+
+● Identifiants personnels : Prénom, nom, adresse e-mail, numéro de téléphone (fournis lors de la création ou de la mise à jour de votre profil).
+● Adresse physique : Adresse complète (rue, ville, province, code postal) pour associer votre profil ou vos certificats de propriété à une localisation.
+● Documents d’identification :
+○ Photos de votre carte nationale d’identité (recto et verso) pour vérifier votre identité.
+○ Photo de profil pour personnaliser votre compte.
+○ Certificats de propriété (images ou fichiers PDF) pour associer des biens à votre compte.
+● Localisation : Coordonnées GPS (latitude et longitude) pour valider votre adresse ou associer une position géographique à vos certificats (optionnel).
+Données d’utilisation
+
+Nous collectons automatiquement :
+
+● Adresse IP, type et version du système d’exploitation, identifiants uniques de l’appareil (par exemple, identifiant publicitaire).
+● Pages visitées, heure et date des visites, durée d’utilisation.
+Données spécifiques à l’application
+
+Avec votre autorisation préalable via les paramètres de votre appareil :
+
+● Caméra : Pour capturer des photos de votre carte d’identité, de votre profil ou de certificats de propriété.
+● Images et photos (galerie) : Pour vous permettre de sélectionner des photos ou certificats depuis votre appareil.
+● Localisation : Pour associer une position géographique à votre adresse ou à vos certificats (uniquement en avant-plan).
+Ces données sont soit stockées localement sur votre appareil, soit téléchargées sur nos serveurs sécurisés (Firebase) pour fournir les fonctionnalités du Service. Vous pouvez révoquer ces autorisations à tout moment dans les paramètres de votre appareil.
+
+Utilisation de vos données personnelles
+Nous utilisons vos données pour :
+
+● Fournir et maintenir le Service :
+○ Vérifier votre identité via vos photos et documents.
+○ Associer des certificats de propriété à votre compte.
+○ Assurer la stabilité et la sécurité via la surveillance de l’utilisation.
+● Gérer votre compte : Permettre l’inscription et l’accès aux fonctionnalités réservées aux utilisateurs enregistrés.
+● Exécuter un contrat : Traiter vos demandes (par exemple, validation de profil ou ajout de certificats).
+● Vous contacter : Par e-mail, SMS ou notifications push pour des mises à jour, alertes de sécurité ou informations sur le Service.
+● Améliorer le Service : Analyser les tendances d’utilisation pour optimiser les fonctionnalités et l’expérience utilisateur.
+● Respecter les obligations légales : Conserver les données nécessaires pour se conformer aux lois applicables au Cameroun ou dans d’autres juridictions où le Service est utilisé.
+Nous ne vendons pas vos données personnelles à des tiers.
+
+ 
+Partage de vos données personnelles
+Nous pouvons partager vos données dans les cas suivants :
+
+● Avec des prestataires de services :
+○ Hébergement des données sur Firebase (Google Cloud), basé aux États-Unis.
+○ Analyse des performances via Firebase Analytics.
+○ Ces prestataires sont contractuellement tenus de protéger vos données et de respecter les lois applicables.
+● Avec des partenaires commerciaux : Pour des fonctionnalités spécifiques (par exemple, validation de documents par des tiers), uniquement avec votre consentement explicite.
+● En cas de transfert d’entreprise : Lors d’une fusion, acquisition ou vente d’actifs, vos données peuvent être transférées, avec notification préalable.
+● Pour des raisons légales : Si requis par la loi, une autorité judiciaire, ou pour protéger nos droits, notre propriété ou la sécurité des utilisateurs.
+ 
+Conservation de vos données personnelles
+● Durée :
+○ Les données personnelles (profil, documents) sont conservées tant que votre compte est actif ou aussi longtemps que nécessaire pour fournir le Service.
+○ En cas de suppression de compte, les données sont effacées dans un délai de 30 jours, sauf obligation légale contraire.
+● Données d’utilisation : Conservées pour une durée maximale de 12 mois à des fins d’analyse, sauf si une conservation prolongée est requise pour la sécurité ou par la loi.
+ 
+Transfert de vos données personnelles
+● Vos données sont principalement traitées au Cameroun, mais peuvent être transférées vers des serveurs situés à l’étranger (par exemple, États-Unis via Firebase).
+● Nous utilisons des mesures de sécurité conformes aux normes internationales :
+○ Cryptage SSL pour les transferts de données.
+○ Contrôle d’accès strict sur nos serveurs.
+● Si vous utilisez Kinaru depuis l’Union européenne, nous respectons le Règlement Général sur la Protection des Données (RGPD) pour garantir vos droits.
+ 
+Vos droits sur vos données personnelles
+Vous avez les droits suivants :
+
+● Accès : Consulter les données que nous détenons sur vous via votre compte ou en nous contactant.
+● Rectification : Mettre à jour vos informations dans l’application ou en nous contactant.
+● Suppression : Demander la suppression de votre compte et de vos données (sauf obligations légales) via l’application ou par e-mail.
+● Restriction : Limiter l’utilisation de vos données dans certains cas (par exemple, pendant une vérification).
+● Portabilité : Obtenir une copie de vos données dans un format structuré (JSON ou CSV).
+● Opposition : Refuser certaines utilisations, comme les notifications marketing.
+Pour exercer ces droits, contactez-nous à : sprinteragenceit@gmail.com (mailto:sprinteragenceit@gmail.com).
+
+ 
+Sécurité de vos données personnelles
+● Nous utilisons des mesures techniques et organisationnelles :
+○ Cryptage des données en transit et au repos (via Firebase).
+○ Pare-feu et audits réguliers pour détecter les vulnérabilités.
+● Cependant, aucune méthode n’est infaillible. En cas de violation de données, nous vous informerons dans les 72 heures, conformément aux lois applicables (ex. : RGPD), et prendrons des mesures pour limiter les risques.
+ 
+Confidentialité des enfants
+● Kinaru n’est pas destiné aux enfants de moins de 13 ans.
+● Nous ne collectons pas sciemment de données personnelles d’enfants sans le consentement parental vérifiable. Si vous êtes un parent et pensez que votre enfant nous a fourni des données, contactez-nous pour leur suppression immédiate.
+ 
+Permissions spécifiques et collecte de données
+Kinaru demande les permissions suivantes avec votre consentement explicite :
+
+● Caméra :
+○ Pourquoi : Pour prendre des photos de votre carte d’identité, de votre profil ou de certificats de propriété.
+○ Quand : Lors de l’ajout d’une photo dans ProfileProprio ou AddPropertyCertificate.
+○ Alternative : Vous pouvez désactiver cette permission et sélectionner des images existantes depuis la galerie.
+● Accès aux images (galerie) :
+○ Pourquoi : Pour vous permettre de sélectionner des photos ou certificats (images/PDF) depuis votre appareil.
+○ Quand : Lors de l’utilisation des fonctions "Ajouter une image" ou "Ajouter un PDF" dans AddPropertyCertificate.
+○ Portée : Limitée aux fichiers que vous sélectionnez manuellement. Les images sont temporairement accessibles pour prévisualisation, puis téléchargées sur Firebase si vous confirmez.
+○ Permission : READ_MEDIA_IMAGES (Android 13+).
+● Localisation :
+○ Pourquoi : Pour associer une position géographique à votre adresse ou à vos certificats de propriété (par exemple, dans ProfileProprio).
+○ Quand : Lors de la validation de votre profil ou de l’ajout d’un certificat (optionnel).
+○ Type : Localisation en avant-plan uniquement, avec précision variable selon vos paramètres.
+○ Permission : ACCESS_FINE_LOCATION ou ACCESS_COARSE_LOCATION.
+● Désactivation :
+○ Vous pouvez révoquer ces permissions dans les paramètres de votre appareil.
+○ Sans caméra ou accès à la galerie, vous ne pourrez pas ajouter de nouveaux documents, mais les autres fonctionnalités resteront disponibles.
+○ La localisation est facultative et peut être désactivée sans impact critique sur le Service.
+ 
+Cookies et technologies similaires
+● Kinaru n’utilise pas de cookies dans l’application mobile.
+● Nous utilisons des technologies similaires :
+○ Firebase Analytics : Pour collecter des données d’utilisation (pages visitées, erreurs d’application).
+○ Identifiants d’appareil : Pour assurer la sécurité et personnaliser votre expérience.
+● Vous pouvez désactiver la collecte de données analytiques dans les paramètres de votre appareil (ex. : désactiver l’identifiant publicitaire) ou via les options de l’application (si disponibles).
+ 
+Modifications de cette politique
+● Nous mettrons à jour cette politique si nécessaire. Les changements seront publiés ici avec une nouvelle date de "Dernière mise à jour".
+● Pour les modifications importantes (ex. : nouvelle collecte de données), nous vous informerons par e-mail ou via une notification dans l’application au moins 7 jours avant leur entrée en vigueur.
+ 
+Contactez-nous
+Pour toute question, demande ou préoccupation concernant cette politique ou vos données :
+
+● Email : sprinteragenceit@gmail.com
+● Site web : https://www.kinaru.app/contact
+● Adresse physique : Sprinter IT, Douala, Cameroun
+ 
+
+ 
+ 
