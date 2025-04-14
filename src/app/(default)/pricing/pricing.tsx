@@ -1,20 +1,12 @@
 'use client'
 
 import PricingTable from "@/components/Pricing/PricingTable";
-import {useEffect, useState} from "react";
-import type {Pricing} from "@/types";
-import {fetchPricings} from "@/app/(default)/pricing/actions";
 import Link from "next/link";
 import DownloadAppAds from "@/components/Ads/DownloadAppAds";
 import {motion} from "framer-motion";
 import {makeToUpVariant} from "@/constants/variants.motion";
 
 export default function PricingContent() {
-    const [prices, setPrices] = useState<Pricing[]>([])
-
-    useEffect(() => {
-        fetchPricings().then(data => setPrices(data))
-    }, [])
 
     return (
         <div className="container flex flex-col gap-10">
@@ -31,7 +23,7 @@ export default function PricingContent() {
                 </motion.p>
             </section>
             <motion.section className="bg-white rounded-xl px-5 py-10 overflow-x-scroll" variants={makeToUpVariant({delay: 0.7})} initial='hidden' whileInView='visible'>
-                <PricingTable prices={prices} />
+                <PricingTable />
                 <div className="text-center mt-8">
                     <p className="mb-2">Les paiements peuvent être effectués via MTN Mobile Money, Orange Money ou carte bancaire.</p>
                     <p className="mb-2">Vous avez une question? <Link href="/faq" className="text-primary underline font-bold">Consultez notre FAQ</Link></p>

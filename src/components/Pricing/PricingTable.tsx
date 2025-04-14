@@ -1,10 +1,7 @@
-import { Pricing } from "@/types";
+
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { useMemo, useState } from "react";
 
-export type PricingTableProps = {
-  prices: Pricing[];
-};
 
 const pricingData = {
   locataire: [
@@ -120,7 +117,7 @@ const pricingData = {
   ],
 };
 
-export default function PricingTable({ prices }: PricingTableProps) {
+export default function PricingTable() {
   const [userType, setUserType] = useState<
     "locataire" | "proprietaire" | "agence"
   >("locataire");
