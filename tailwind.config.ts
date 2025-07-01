@@ -21,6 +21,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue: "var(--blue)",
         primary: {
           DEFAULT: "var(--primary-color)",
           light: "rgba(243, 87, 37, 0.1)" // 10% opacity version of primary

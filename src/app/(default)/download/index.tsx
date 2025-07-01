@@ -5,18 +5,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { makeToUpVariant } from "@/constants/variants.motion";
 import { APPLINK_ANDROID, APPLINK_IOS } from "@/constants";
-import { 
-  RiFlashlightFill, 
-  RiShieldCheckFill, 
-  RiGlobalFill, 
-  RiMoneyDollarCircleFill, 
-  RiCloudFill, 
-  RiSettings4Fill, 
+import {
   RiAppleFill, 
   RiGooglePlayFill, 
   RiArrowRightSLine, 
-  RiCheckFill 
+  RiCheckFill, 
+  RiDownloadLine
 } from 'react-icons/ri';
+import DownloadAppAds from "@/components/Ads/DownloadAppAds";
 
 // Composant réutilisable pour les avantages
 const FeatureCard = ({
@@ -58,36 +54,73 @@ export default function DownloadPageContent() {
               initial="hidden"
               whileInView="visible"
             >
-              Disponible gratuitement sur iOS et Android. Commencez votre
+              Disponible gratuitement sur Android. Commencez votre
               expérience dès maintenant.
             </motion.p>
             <motion.div
+              className="max-w-[250px] mx-auto"
+              variants={makeToUpVariant({ delay: 0.3 })}
+              initial="hidden"
+              whileInView="visible"
+            >
+              <Link
+                href="/api/download/apk"
+                className="bg-blue text-white px-8 py-4 rounded-lg flex items-center justify-center hover:bg-gray-800/90 transition duration-300 shadow-lg border border-gray-200"
+              >
+                <div className="w-full flex items-center justify-between">
+                  <div className="bg-white p-2 rounded mr-3">
+                    <RiDownloadLine className="text-blue h-6 w-6" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm font-medium">Télécharger</div>
+                    <div className="text-lg font-bold">Kinaru APK</div>
+                    <div className="text-sm text-primary">Dernière version</div>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+            { /** TODO: enable download for other stores */}
+            {/* <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"
               variants={makeToUpVariant({ delay: 0.3 })}
               initial="hidden"
               whileInView="visible"
             >
               <Link
-                href="https://apps.apple.com/app/kinaru"
+                href={APPLINK_IOS}
                 className="bg-black text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-gray-800 transition duration-300"
               >
                 <RiAppleFill className="w-7 h-7 mr-2" />
                 App Store
               </Link>
               <Link
-                href="https://play.google.com/store/apps/details?id=com.kinaru.app"
+                href={APPLINK_ANDROID}
                 className="bg-green-600 text-white px-6 py-3 rounded-lg flex items-center justify-center hover:bg-green-700 transition duration-300"
               >
                 <RiGooglePlayFill className="w-6 h-6 mr-2" />
                 Google Play
               </Link>
             </motion.div>
+            <p>
+              <Link
+                href="/api/download/apk"
+                className="text-white mt-4 inline-block hover:underline"
+              >
+                Télécharger la version APK
+              </Link>
+            </p> */}
           </div>
         </div>
       </section>
 
+      <section>
+        <div className="container">
+          <DownloadAppAds />
+        </div>
+      </section>
+
       {/* App Features */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-center mb-16"
@@ -127,7 +160,7 @@ export default function DownloadPageContent() {
               </ul>
               <div className="mt-6">
                 <Link
-                  href="https://apps.apple.com/app/kinaru"
+                  href="#"
                   className="inline-flex items-center text-primary hover:text-primary-dark"
                 >
                   Télécharger sur l'App Store
@@ -153,7 +186,7 @@ export default function DownloadPageContent() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-5">
             <motion.div
               className="flex justify-center"
               variants={makeToUpVariant({ delay: 0.2 })}
@@ -196,7 +229,7 @@ export default function DownloadPageContent() {
               </ul>
               <div className="mt-6">
                 <Link
-                  href="https://play.google.com/store/apps/details?id=com.kinaru.app"
+                  href="#"
                   className="inline-flex items-center text-primary hover:text-primary-dark"
                 >
                   Télécharger sur Google Play
@@ -206,10 +239,10 @@ export default function DownloadPageContent() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Avantages */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-center mb-12"
@@ -274,10 +307,10 @@ export default function DownloadPageContent() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Témoignages */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-center mb-12"
@@ -358,10 +391,10 @@ export default function DownloadPageContent() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call-to-action */}
-      <section className="py-20 bg-primary text-white">
+      {/* <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.h2
             className="text-3xl md:text-4xl font-bold mb-6"
@@ -403,10 +436,10 @@ export default function DownloadPageContent() {
             </Link>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-center mb-12"
@@ -455,7 +488,7 @@ export default function DownloadPageContent() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
