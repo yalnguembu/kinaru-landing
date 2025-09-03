@@ -37,18 +37,18 @@ export const services = [
         ],
         className: "flex-col-reverse"
     },
-    {
-        tag: 'Prets bancaires et assurances',
-        title: "Accedez a des services financiers.",
-        image: "/assets/images/services/banque_assusrance.png",
-        icon: <FaHistory />,
-        description: "Comparez les offres de pres bancaires, realisez des simulations de credit et souscrivez" +
-            " à des assurances de loyer impyé pour sécuriser vos investissements",
-        actionText: "Commencez l'essaie gratuit",
-        actionUrl: "#",
-        data: [],
-        className: "flex-col-reverse md:flex-row-reverse"
-    },
+    // {
+    //     tag: 'Prets bancaires et assurances',
+    //     title: "Accedez a des services financiers.",
+    //     image: "/assets/images/services/banque_assusrance.png",
+    //     icon: <FaHistory />,
+    //     description: "Comparez les offres de pres bancaires, realisez des simulations de credit et souscrivez" +
+    //         " à des assurances de loyer impyé pour sécuriser vos investissements",
+    //     actionText: "Commencez l'essaie gratuit",
+    //     actionUrl: "#",
+    //     data: [],
+    //     className: "flex-col-reverse md:flex-row-reverse"
+    // },
     {
         tag: 'Maintenance et Conciergerie',
         title: "Une service d'assistance a votre écoute",

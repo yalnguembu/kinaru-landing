@@ -217,13 +217,13 @@ export default function HomeContent() {
             );
           })}
         </div>
-        <a href="#" className="btn-action">
+        <a href="/download" className="btn-action">
           Télécharger maintenant
         </a>
       </section>
 
       {/* OUR CLIENTS */}
-      <section
+      {/* <section
         className="flex flex-col gap-8 items-center text-center"
         id="clients"
       >
@@ -261,7 +261,7 @@ export default function HomeContent() {
             );
           })}
         </motion.div>
-      </section>
+      </section> */}
 
       {/* APP SCREENS */}
       <section

@@ -9,7 +9,7 @@ export const APPLINK_IOS =
 
 export const APPLINK_ANDROID =
   process.env.NEXT_PUBLIC_PLAYSTORE_URL ??
-  "https://play.google.com/store/apps/details?id=com.sprinter.kinaru";
+  "https://play.google.com/store/apps/details?id=com.sprinteragence.kinaru";
 
 export const APP_URL = process.env.APP_URL ?? "http://localhost:3000";
 

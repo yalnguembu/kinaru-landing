@@ -10,7 +10,7 @@ export default function DownloadColumn() {
       </p>
       <div className="flex flex-col items-center sm:items-start gap-4">
         <GooglePlayButton />
-        <AppleStoreButton />
+        {/* <AppleStoreButton /> */}
       </div>
     </div>
   );

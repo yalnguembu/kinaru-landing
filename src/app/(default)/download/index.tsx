@@ -37,7 +37,7 @@ export default function DownloadPageContent() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-primary py-16 md:py-24">
+      {/* <section className="bg-primary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1
@@ -79,8 +79,7 @@ export default function DownloadPageContent() {
                 </div>
               </Link>
             </motion.div>
-            { /** TODO: enable download for other stores */}
-            {/* <motion.div
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"
               variants={makeToUpVariant({ delay: 0.3 })}
               initial="hidden"
@@ -108,10 +107,10 @@ export default function DownloadPageContent() {
               >
                 Télécharger la version APK
               </Link>
-            </p> */}
+            </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <div className="container">

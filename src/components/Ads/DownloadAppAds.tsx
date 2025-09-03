@@ -13,14 +13,14 @@ export default function DownloadAppAds()
                 <div className="items-center md:items-start md:text-left text-center flex flex-col gap-5 text-white w-full md:max-w-[50%]">
                     <Link href="#" className="btn-primary-rounded">Télécharger</Link>
                     <motion.h2 className="text-5xl md:text-3xl" variants={makeToUpVariant({delay: 0.2})} initial='hidden' whileInView='visible' >
-                        Disponible sur Android & iOS
+                        Disponible sur Android & Bientôt sur iOS
                     </motion.h2>
                     <motion.p variants={makeToUpVariant({delay: 0.4})} initial='hidden' whileInView='visible'>
-                        Vous pouvez télécharger sur Playstore et l&apos;Appstore
+                        Vous pouvez télécharger sur Playstore 
                     </motion.p>
                     <div className="flex flex-row w-fit items-center gap-5">
                         <GooglePlayButton/>
-                        <AppleStoreButton/>
+                        {/* <AppleStoreButton/> et l&apos;Appstore */}
                     </div>
                 </div>
                 <motion.div className="self-end mx-auto" variants={makeToLeftVariant()} initial='hidden' whileInView='visible'>
