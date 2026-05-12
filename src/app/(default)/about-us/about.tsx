@@ -70,8 +70,8 @@ export default function AboutContent() {
         <RatingSection />
       </motion.div>
 
-      {/* MEET OUR TEAM */}
-      <MeetTeamSection />
+      {/* MEET OUR TEAM 
+      <MeetTeamSection />*/}
 
       <DownloadAppAds />
     </div>

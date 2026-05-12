@@ -1,20 +1,19 @@
 import {User} from "@/types";
 
 export const firstCarouselImages: string[] = [
-    '/assets/images/about/abtslide_2.png',
-    '/assets/images/about/abtslide_1.png',
-    '/assets/images/about/abtslide_2.png',
-    '/assets/images/about/abtslide_3.png',
-    '/assets/images/about/abtslide_4.png',
-    '/assets/images/about/abtslide_5.png',
-    '/assets/images/about/abtslide_4.png',
+    '/assets/images/about/abt-1.jpg',
+    '/assets/images/about/abt-2.jpg',
+    '/assets/images/about/abt-3.jpg',
+    '/assets/images/about/abt-4.jpg',
+    '/assets/images/about/abt-5.jpg',
+    '/assets/images/about/abt-4.jpg',
 ]
 
 export const statsValues = [
-    {number: 2300, start: 1500, time:10, step: 3, name: 'Revues', letter: '+'},
-    {number: 150, step: 3, name: 'Pays', letter: '+'},
+    {number: 2300, start: 1500, time: 10, step: 3, name: 'Revues', letter: '+'},
+    {number: 1, step: 3, name: 'Pays', letter: '+'},
     {number: 17, name: 'Téléchargements', letter: 'M+'},
-    {number: 8, name: 'Abonnements', letter: 'M+'}
+    {number: 1, name: 'Abonnements', letter: 'M+'}
 ]
 
 export const valuesItem = [
@@ -28,7 +27,7 @@ export const valuesItem = [
     },
     {
         name: "Aucune restriction",
-        content: "Nous nous adressons aux particuliers , aux agences immobilières et à tout personnel cherchant une solution moderne et efficace pour la gestion de locations"
+        content: "Nous nous adressons aux particuliers, aux agences immobilières et à tout personnel cherchant une solution moderne et efficace pour la gestion de locations."
     },
 ]
 
@@ -40,19 +39,49 @@ export const teams: User[] = [
 
 export const userRates = [
     {
-        rate: 4,
-        user: {name: 'William Joy', role: 'Smartbrian Tech', image_url: '/assets/images/reviews/review-1.png'} as User,
-        comment: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem typing industry has been the standard dummy.'
+        rate: 5,
+        user: {
+            name: 'Chancelle Mbarga',
+            role: 'Locataire · Douala, Bonapriso',
+            image_url: '/assets/images/logos/MOBI/108x108.png'
+        } as User,
+        comment: "J'ai trouvé mon appartement en moins de 48h après mon inscription sur Kinaru. Le processus était clair, sans intermédiaire louche et les photos correspondaient exactement à la réalité. Je recommande vivement à toute personne qui cherche un logement à Douala."
     },
     {
         rate: 5,
-        user: {name: 'William Joy', role: 'Smartbrian Tech', image_url: '/assets/images/reviews/review-2.png'} as User,
-        comment: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem typing industry has been the standard dummy.'
+        user: {
+            name: 'Patrick Essomba',
+            role: 'Propriétaire bailleur · Yaoundé, Bastos',
+            image_url: '/assets/images/logos/MOBI/108x108.png'
+        } as User,
+        comment: "Avec Kinaru Pro, je gère mes 6 appartements depuis mon téléphone. Je reçois les demandes de visite en temps réel, je signe les contrats en ligne et je suis mes paiements chaque mois. C'est un gain de temps considérable par rapport à ce que je faisais avant."
+    },
+    {
+        rate: 5,
+        user: {
+            name: 'Nadège Talla',
+            role: 'Étudiante · Douala, Logbaba',
+            image_url: '/assets/images/logos/MOBI/108x108.png'
+        } as User,
+        comment: "En tant qu'étudiante avec un petit budget, j'avais du mal à trouver une chambre décente. Kinaru m'a permis de filtrer par prix, quartier et type de bien. J'ai visité 2 chambres et pris ma décision le même jour. Simple, rapide et sans frais cachés."
     },
     {
         rate: 4,
-        user: {name: 'William Joy', role: 'Smartbrian Tech', image_url: '/assets/images/reviews/review-3.png'} as User,
-        comment: 'Lorem Ipsum is simply dummy text of the printing and typing industry lorem typing industry has been the standard dummy.'
+        user: {
+            name: 'Rodrigue Nkeng',
+            role: 'Agent immobilier · Agence ImmoPlus Douala',
+            image_url: '/assets/images/logos/MOBI/108x108.png'
+        } as User,
+        comment: "Kinaru Pro a transformé la façon dont notre agence travaille. On publie nos annonces en quelques minutes, les clients nous contactent directement via l'appli et on conclut plus de baux qu'avant. L'interface est professionnelle et nos clients apprécient la transparence."
+    },
+    {
+        rate: 5,
+        user: {
+            name: 'Aurore Djomo',
+            role: 'Locataire · Douala, Akwa',
+            image_url: '/assets/images/logos/MOBI/108x108.png'
+        } as User,
+        comment: "Ce qui m'a conquis, c'est la possibilité de voir les avis des anciens locataires avant de prendre une décision. J'ai évité un propriétaire peu sérieux grâce à ça. Kinaru, c'est comme avoir un ami de confiance dans l'immobilier."
     },
 ]
 

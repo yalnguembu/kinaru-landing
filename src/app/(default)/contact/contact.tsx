@@ -44,7 +44,7 @@ export default function ContactContent() {
                 <ContactForm />
             </motion.div>
             {/* MAP SECTION */}
-            <section>
+            {/* <section>
                 <motion.div
                     className="container rounded-xl overflow-hidden h-[600px] bg-gray-100"
                     variants={makeToLeftVariant()} initial='hidden' whileInView='visible'
@@ -54,7 +54,7 @@ export default function ContactContent() {
                         className="border-0 w-full h-full" allowFullScreen loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </motion.div>
-            </section>
+            </section> */}
         </div>
     );
 }
