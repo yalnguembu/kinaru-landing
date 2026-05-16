@@ -1,225 +1,583 @@
-import {Metadata} from "next";
+import { Metadata } from "next";
 import { getAbsoluteUrl } from "@/constants";
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité | Kinaru - Protection de vos données',
-  description: 'Découvrez comment Kinaru protège vos données personnelles. Notre politique de confidentialité détaille la collecte, l\'utilisation et la protection de vos informations.',
-  keywords: 'politique confidentialité Kinaru, protection données, RGPD Cameroun, vie privée application, sécurité données personnelles, confidentialité immobilier',
+  title: "Politique de Confidentialité | Kinaru - Protection de vos données",
+  description:
+    "Découvrez comment Kinaru protège vos données personnelles. Notre politique de confidentialité détaille la collecte, l'utilisation et la protection de vos informations.",
+  keywords:
+    "politique confidentialité Kinaru, protection données, RGPD Cameroun, vie privée application, sécurité données personnelles, confidentialité immobilier",
   openGraph: {
-    title: 'Politique de Confidentialité Kinaru',
-    description: 'Comment Kinaru protège vos données personnelles et respecte votre vie privée lors de l\'utilisation de notre plateforme immobilière.',
-    url: getAbsoluteUrl('legal/privacy'),
-    siteName: 'Kinaru',
+    title: "Politique de Confidentialité Kinaru",
+    description:
+      "Comment Kinaru protège vos données personnelles et respecte votre vie privée lors de l'utilisation de notre plateforme immobilière.",
+    url: getAbsoluteUrl("legal/privacy"),
+    siteName: "Kinaru",
     images: [
       {
-        url: getAbsoluteUrl('images/privacy-og.jpg'),
+        url: getAbsoluteUrl("images/privacy-og.jpg"),
         width: 1200,
         height: 630,
-        alt: 'Politique de confidentialité Kinaru',
-      }
+        alt: "Politique de confidentialité Kinaru",
+      },
     ],
-    locale: 'fr_FR',
-    type: 'website',
+    locale: "fr_FR",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Politique de Confidentialité Kinaru',
-    description: 'Comment Kinaru protège vos données personnelles et respecte votre vie privée lors de l\'utilisation de notre plateforme immobilière.',
-    images: [getAbsoluteUrl('images/privacy-twitter.jpg')],
-    creator: '@KinaruApp',
-    site: '@KinaruApp'
-  }
-}
+    card: "summary_large_image",
+    title: "Politique de Confidentialité Kinaru",
+    description:
+      "Comment Kinaru protège vos données personnelles et respecte votre vie privée lors de l'utilisation de notre plateforme immobilière.",
+    images: [getAbsoluteUrl("images/privacy-twitter.jpg")],
+    creator: "@KinaruApp",
+    site: "@KinaruApp",
+  },
+};
 
 export default function PrivacyScreen() {
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold">Politique de confidentialité de Kinaru</h2>
-      <p className="text-sm text-gray-600">Dernière mise à jour : 11 avril 2025</p>
-      
+      <h2 className="text-2xl font-bold">
+        Politique de confidentialité de Kinaru
+      </h2>
+
+      <p className="text-sm text-gray-600">
+        Dernière mise à jour : 16 mai 2026
+      </p>
+
       <div>
         <p>
-          Chez Sprinter IT, nous nous engageons à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos informations lorsque vous utilisez notre application mobile Kinaru (ci-après dénommée "Service"). Elle vous informe également de vos droits en matière de confidentialité et de la manière dont la loi vous protège. En utilisant le Service, vous acceptez les pratiques décrites dans cette politique.
+          Chez Kinaru, nous nous engageons à protéger votre vie privée. Cette
+          politique de confidentialité explique comment nous collectons,
+          utilisons, partageons et protégeons vos informations lorsque vous
+          utilisez notre application mobile Kinaru et notre plateforme
+          immobilière, ci-après dénommées le “Service”. Elle vous informe
+          également de vos droits en matière de confidentialité et de la manière
+          dont la loi vous protège. En utilisant le Service, vous acceptez les
+          pratiques décrites dans cette politique.
         </p>
       </div>
-      
+
       <section className="space-y-4">
         <h3 className="text-xl font-semibold">Interprétation et définitions</h3>
+
         <div>
           <h4 className="font-medium">Interprétation</h4>
-          <p>Les mots commençant par une majuscule ont des significations spécifiques définies ci-dessous. Ces définitions s'appliquent au singulier comme au pluriel.</p>
-          
+          <p>
+            Les mots commençant par une majuscule ont des significations
+            spécifiques définies ci-dessous. Ces définitions s'appliquent au
+            singulier comme au pluriel.
+          </p>
+
           <h4 className="font-medium mt-4">Définitions</h4>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Compte</strong> : Un compte unique créé pour vous permettre d'accéder à notre Service ou à certaines de ses fonctionnalités.</li>
-            <li><strong>Société</strong> (également appelée "Nous", "Notre", "Nos") : Sprinter IT, basée à Douala, Cameroun.</li>
-            <li><strong>Application</strong> : Kinaru, le logiciel mobile fourni par la Société.</li>
-            <li><strong>Pays</strong> : Cameroun.</li>
-            <li><strong>Appareil</strong> : Tout dispositif utilisé pour accéder au Service (smartphone, tablette, etc.).</li>
-            <li><strong>Données personnelles</strong> : Toute information permettant d'identifier une personne physique.</li>
-            <li><strong>Service</strong> : L'application Kinaru.</li>
-            <li><strong>Prestataire de services</strong> : Toute entité ou personne traitant des données pour le compte de la Société.</li>
-            <li><strong>Données d'utilisation</strong> : Données collectées automatiquement lors de l'utilisation du Service (par exemple, durée de visite, adresse IP).</li>
-            <li><strong>Vous</strong> : L'utilisateur individuel ou l'entité au nom de laquelle le Service est utilisé.</li>
+            <li>
+              <strong>Compte</strong> : Un compte unique créé pour vous
+              permettre d'accéder à notre Service ou à certaines de ses
+              fonctionnalités.
+            </li>
+
+            <li>
+              <strong>Société</strong> également appelée “Nous”, “Notre” ou
+              “Nos” : Kinaru, plateforme immobilière numérique basée à Douala,
+              Cameroun.
+            </li>
+
+            <li>
+              <strong>Application</strong> : Kinaru, plateforme immobilière
+              numérique permettant la publication, la recherche, la gestion et
+              la mise en relation autour de biens immobiliers.
+            </li>
+
+            <li>
+              <strong>Pays</strong> : Cameroun.
+            </li>
+
+            <li>
+              <strong>Appareil</strong> : Tout dispositif utilisé pour accéder
+              au Service, notamment smartphone, tablette ou ordinateur.
+            </li>
+
+            <li>
+              <strong>Données personnelles</strong> : Toute information
+              permettant d'identifier directement ou indirectement une personne
+              physique.
+            </li>
+
+            <li>
+              <strong>Service</strong> : L'application mobile Kinaru, le site
+              web Kinaru et les services associés.
+            </li>
+
+            <li>
+              <strong>Prestataire de services</strong> : Toute entité ou
+              personne traitant des données pour le compte de Kinaru.
+            </li>
+
+            <li>
+              <strong>Données d'utilisation</strong> : Données collectées
+              automatiquement lors de l'utilisation du Service.
+            </li>
+
+            <li>
+              <strong>Vous</strong> : L'utilisateur individuel ou l'entité au
+              nom de laquelle le Service est utilisé.
+            </li>
           </ul>
         </div>
       </section>
-      
+
       <section className="space-y-4">
-        <h3 className="text-xl font-semibold">Collecte et utilisation de vos données personnelles</h3>
+        <h3 className="text-xl font-semibold">
+          Collecte et utilisation de vos données personnelles
+        </h3>
+
         <div>
           <h4 className="font-medium">Types de données collectées</h4>
-          
+
           <h5 className="font-medium mt-3">Données personnelles</h5>
-          <p>Lorsque vous utilisez Kinaru, nous pouvons collecter les informations suivantes avec votre consentement explicite :</p>
+
+          <p>
+            Lorsque vous utilisez Kinaru, nous pouvons collecter les
+            informations suivantes avec votre consentement :
+          </p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Identifiants personnels</strong> : Prénom, nom, adresse e-mail, numéro de téléphone (fournis lors de la création ou de la mise à jour de votre profil).</li>
-            <li><strong>Adresse physique</strong> : Adresse complète (rue, ville, province, code postal) pour associer votre profil ou vos certificats de propriété à une localisation.</li>
-            <li><strong>Documents d'identification</strong> :
+            <li>
+              <strong>Identifiants personnels</strong> : prénom, nom, adresse
+              e-mail, numéro de téléphone.
+            </li>
+
+            <li>
+              <strong>Adresse physique</strong> : ville, quartier, localisation
+              ou adresse complète pour associer votre profil ou vos biens à une
+              zone géographique.
+            </li>
+
+            <li>
+              <strong>Documents d'identification</strong> :
               <ul className="list-disc pl-6 mt-1">
-                <li>Photos de votre carte nationale d'identité (recto et verso) pour vérifier votre identité.</li>
+                <li>
+                  Photos de votre carte nationale d'identité, recto et verso,
+                  pour vérifier votre identité.
+                </li>
                 <li>Photo de profil pour personnaliser votre compte.</li>
-                <li>Certificats de propriété (images ou fichiers PDF) pour associer des biens à votre compte.</li>
+                <li>
+                  Documents liés aux biens immobiliers, notamment certificats de
+                  propriété, justificatifs ou documents commerciaux lorsque cela
+                  est nécessaire.
+                </li>
               </ul>
             </li>
-            <li><strong>Localisation</strong> : Coordonnées GPS (latitude et longitude) pour valider votre adresse ou associer une position géographique à vos certificats (optionnel).</li>
+
+            <li>
+              <strong>Informations immobilières</strong> : titres, descriptions,
+              images, prix, localisation, type de logement, disponibilité,
+              statut de validation et autres informations liées aux biens
+              publiés.
+            </li>
+
+            <li>
+              <strong>Données de parrainage</strong> : code de parrainage,
+              relation entre parrain et filleul, gains, commissions et
+              historique des récompenses lorsque vous participez au programme
+              Agent Kinaru.
+            </li>
+
+            <li>
+              <strong>Localisation</strong> : coordonnées GPS, latitude et
+              longitude, utilisées pour associer un bien ou une adresse à une
+              position géographique.
+            </li>
           </ul>
-          
+
           <h5 className="font-medium mt-3">Données d'utilisation</h5>
-          <p>Nous collectons automatiquement :</p>
+
+          <p>Nous pouvons collecter automatiquement :</p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li>Adresse IP, type et version du système d'exploitation, identifiants uniques de l'appareil (par exemple, identifiant publicitaire).</li>
-            <li>Pages visitées, heure et date des visites, durée d'utilisation.</li>
+            <li>
+              Adresse IP, type d'appareil, version du système d'exploitation et
+              identifiants techniques.
+            </li>
+            <li>
+              Pages visitées, actions effectuées, heure et date des visites,
+              durée d'utilisation et erreurs techniques.
+            </li>
           </ul>
-          
-          <h5 className="font-medium mt-3">Données spécifiques à l'application</h5>
-          <p>Avec votre autorisation préalable via les paramètres de votre appareil :</p>
+
+          <h5 className="font-medium mt-3">
+            Données spécifiques à l'application
+          </h5>
+
+          <p>
+            Avec votre autorisation préalable via les paramètres de votre
+            appareil, Kinaru peut accéder à :
+          </p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Caméra</strong> : Pour capturer des photos de votre carte d'identité, de votre profil ou de certificats de propriété.</li>
-            <li><strong>Images et photos (galerie)</strong> : Pour vous permettre de sélectionner des photos ou certificats depuis votre appareil.</li>
-            <li><strong>Localisation</strong> : Pour associer une position géographique à votre adresse ou à vos certificats (uniquement en avant-plan).</li>
+            <li>
+              <strong>Caméra</strong> : pour capturer des photos de profil,
+              documents d'identité, certificats ou images de biens immobiliers.
+            </li>
+            <li>
+              <strong>Images et galerie</strong> : pour sélectionner des photos
+              ou documents depuis votre appareil.
+            </li>
+            <li>
+              <strong>Localisation</strong> : pour associer une position
+              géographique à une propriété ou à un profil.
+            </li>
           </ul>
-          <p>Ces données sont soit stockées localement sur votre appareil, soit téléchargées sur nos serveurs sécurisés (Firebase) pour fournir les fonctionnalités du Service. Vous pouvez révoquer ces autorisations à tout moment dans les paramètres de votre appareil.</p>
+
+          <p>
+            Ces données peuvent être stockées localement sur votre appareil ou
+            téléchargées sur nos serveurs sécurisés afin de fournir les
+            fonctionnalités du Service. Vous pouvez révoquer ces autorisations à
+            tout moment dans les paramètres de votre appareil.
+          </p>
         </div>
       </section>
-      
+
       <section className="space-y-4">
-        <h3 className="text-xl font-semibold">Utilisation de vos données personnelles</h3>
+        <h3 className="text-xl font-semibold">
+          Utilisation de vos données personnelles
+        </h3>
+
         <div>
           <p>Nous utilisons vos données pour :</p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Fournir et maintenir le Service</strong> :
+            <li>
+              <strong>Fournir et maintenir le Service</strong> :
               <ul className="list-disc pl-6 mt-1">
-                <li>Vérifier votre identité via vos photos et documents.</li>
-                <li>Associer des certificats de propriété à votre compte.</li>
-                <li>Assurer la stabilité et la sécurité via la surveillance de l'utilisation.</li>
+                <li>Créer et gérer votre compte utilisateur.</li>
+                <li>Vérifier votre identité et vos documents.</li>
+                <li>Publier, vérifier et gérer les biens immobiliers.</li>
+                <li>Faciliter la mise en relation entre utilisateurs.</li>
               </ul>
             </li>
-            <li><strong>Gérer votre compte</strong> : Permettre l'inscription et l'accès aux fonctionnalités réservées aux utilisateurs enregistrés.</li>
-            <li><strong>Exécuter un contrat</strong> : Traiter vos demandes (par exemple, validation de profil ou ajout de certificats).</li>
-            <li><strong>Vous contacter</strong> : Par e-mail, SMS ou notifications push pour des mises à jour, alertes de sécurité ou informations sur le Service.</li>
-            <li><strong>Améliorer le Service</strong> : Analyser les tendances d'utilisation pour optimiser les fonctionnalités et l'expérience utilisateur.</li>
-            <li><strong>Respecter les obligations légales</strong> : Conserver les données nécessaires pour se conformer aux lois applicables au Cameroun ou dans d'autres juridictions où le Service est utilisé.</li>
+
+            <li>
+              <strong>Gérer les validations</strong> : permettre à l'équipe
+              Kinaru de valider ou refuser les profils, documents et propriétés
+              soumis sur la plateforme.
+            </li>
+
+            <li>
+              <strong>Gérer le programme Agent Kinaru</strong> : suivre les
+              filleuls, commissions, récompenses, gains et paiements liés au
+              système de parrainage.
+            </li>
+
+            <li>
+              <strong>Vous contacter</strong> : par e-mail, téléphone,
+              notifications push ou messages liés à votre compte, vos annonces,
+              vos validations ou vos paiements.
+            </li>
+
+            <li>
+              <strong>Améliorer le Service</strong> : analyser l'utilisation de
+              la plateforme afin d'améliorer les fonctionnalités, la sécurité et
+              l'expérience utilisateur.
+            </li>
+
+            <li>
+              <strong>Respecter nos obligations légales</strong> : conserver
+              certaines informations lorsque cela est nécessaire pour des raisons
+              légales, fiscales, administratives ou de sécurité.
+            </li>
           </ul>
-          <p className="font-medium mt-2">Nous ne vendons pas vos données personnelles à des tiers.</p>
+
+          <p className="font-medium mt-2">
+            Nous ne vendons pas vos données personnelles à des tiers.
+          </p>
         </div>
       </section>
-      
+
       <section className="space-y-4">
-        <h3 className="text-xl font-semibold">Partage de vos données personnelles</h3>
+        <h3 className="text-xl font-semibold">
+          Vérification des profils et des propriétés
+        </h3>
+
+        <div>
+          <p>
+            Kinaru peut demander des documents d'identification, des justificatifs
+            ou des informations complémentaires afin de vérifier l'authenticité
+            des utilisateurs, agences, bailleurs, agents immobiliers et biens
+            publiés sur la plateforme.
+          </p>
+
+          <p>Kinaru se réserve le droit de :</p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>refuser une annonce ou une propriété non conforme ;</li>
+            <li>suspendre ou désactiver un compte suspect ;</li>
+            <li>supprimer un contenu frauduleux ou trompeur ;</li>
+            <li>demander des informations complémentaires ;</li>
+            <li>
+              bloquer temporairement certaines fonctionnalités en cas d'activité
+              suspecte.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h3 className="text-xl font-semibold">
+          Programme Agent Kinaru, parrainage et commissions
+        </h3>
+
+        <div>
+          <p>
+            Kinaru peut proposer un programme de parrainage permettant à certains
+            utilisateurs ou Agents Kinaru d'inviter des bailleurs, agences ou
+            agents immobiliers à rejoindre la plateforme.
+          </p>
+
+          <p>
+            Dans ce cadre, nous pouvons collecter et traiter les informations
+            suivantes :
+          </p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>code de parrainage ;</li>
+            <li>identité du parrain ;</li>
+            <li>identité du filleul ;</li>
+            <li>statut de validation du filleul ;</li>
+            <li>propriétés ajoutées par le filleul ;</li>
+            <li>gains générés ;</li>
+            <li>commissions en attente, payées ou annulées ;</li>
+            <li>historique des paiements.</li>
+          </ul>
+
+          <p>
+            Les commissions ne sont générées que selon les conditions définies
+            par Kinaru, notamment après validation du compte ou validation d'une
+            propriété par l'administration.
+          </p>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h3 className="text-xl font-semibold">
+          Partage de vos données personnelles
+        </h3>
+
         <div>
           <p>Nous pouvons partager vos données dans les cas suivants :</p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Avec des prestataires de services</strong> :
+            <li>
+              <strong>Avec des prestataires de services</strong> :
               <ul className="list-disc pl-6 mt-1">
-                <li>Hébergement des données sur Firebase (Google Cloud), basé aux États-Unis.</li>
-                <li>Analyse des performances via Firebase Analytics.</li>
+                <li>
+                  Hébergement et base de données via Firebase et Google Cloud.
+                </li>
+                <li>
+                  Analyse des performances et stabilité de l'application via des
+                  outils techniques.
+                </li>
               </ul>
-              <p className="mt-1">Ces prestataires sont contractuellement tenus de protéger vos données et de respecter les lois applicables.</p>
             </li>
-            <li><strong>Avec des partenaires commerciaux</strong> : Pour des fonctionnalités spécifiques (par exemple, validation de documents par des tiers), uniquement avec votre consentement explicite.</li>
-            <li><strong>En cas de transfert d'entreprise</strong> : Lors d'une fusion, acquisition ou vente d'actifs, vos données peuvent être transférées, avec notification préalable.</li>
-            <li><strong>Pour des raisons légales</strong> : Si requis par la loi, une autorité judiciaire, ou pour protéger nos droits, notre propriété ou la sécurité des utilisateurs.</li>
+
+            <li>
+              <strong>Avec des partenaires opérationnels</strong> : lorsque cela
+              est nécessaire pour vérifier certains documents, traiter une
+              demande ou assurer le bon fonctionnement du Service.
+            </li>
+
+            <li>
+              <strong>En cas de transfert d'activité</strong> : lors d'une
+              fusion, acquisition, réorganisation ou transfert d'actifs.
+            </li>
+
+            <li>
+              <strong>Pour des raisons légales</strong> : si la loi, une
+              autorité compétente ou une procédure légale l'exige.
+            </li>
           </ul>
         </div>
       </section>
-      
+
       <section className="space-y-4">
-        <h3 className="text-xl font-semibold">Conservation et transfert de vos données personnelles</h3>
+        <h3 className="text-xl font-semibold">
+          Conservation et transfert de vos données personnelles
+        </h3>
+
         <div>
           <h4 className="font-medium">Conservation</h4>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li>Les données personnelles (profil, documents) sont conservées tant que votre compte est actif ou aussi longtemps que nécessaire pour fournir le Service.</li>
-            <li>En cas de suppression de compte, les données sont effacées dans un délai de 30 jours, sauf obligation légale contraire.</li>
-            <li>Données d'utilisation : Conservées pour une durée maximale de 12 mois à des fins d'analyse, sauf si une conservation prolongée est requise pour la sécurité ou par la loi.</li>
+            <li>
+              Les données liées au profil, aux documents et aux propriétés sont
+              conservées tant que votre compte est actif ou aussi longtemps que
+              nécessaire pour fournir le Service.
+            </li>
+            <li>
+              En cas de suppression de compte, les données sont supprimées dans
+              un délai raisonnable, sauf obligation légale ou motif légitime de
+              conservation.
+            </li>
+            <li>
+              Les données liées aux transactions, commissions ou paiements
+              peuvent être conservées plus longtemps pour des raisons
+              comptables, fiscales ou de sécurité.
+            </li>
+            <li>
+              Les données d'utilisation peuvent être conservées à des fins
+              d'analyse, de sécurité et d'amélioration du Service.
+            </li>
           </ul>
-          
+
           <h4 className="font-medium mt-3">Transfert</h4>
-          <p>Vos données sont principalement traitées au Cameroun, mais peuvent être transférées vers des serveurs situés à l'étranger (par exemple, États-Unis via Firebase).</p>
-          <p>Nous utilisons des mesures de sécurité conformes aux normes internationales :</p>
+
+          <p>
+            Vos données peuvent être traitées au Cameroun ou sur des serveurs
+            situés à l'étranger, notamment via Firebase et Google Cloud.
+          </p>
+
+          <p>
+            Nous mettons en place des mesures raisonnables pour protéger vos
+            informations, notamment :
+          </p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li>Cryptage SSL pour les transferts de données.</li>
-            <li>Contrôle d'accès strict sur nos serveurs.</li>
+            <li>cryptage des données en transit ;</li>
+            <li>contrôle d'accès aux services internes ;</li>
+            <li>restriction des accès aux données sensibles ;</li>
+            <li>surveillance technique et amélioration continue de la sécurité.</li>
           </ul>
-          <p>Si vous utilisez Kinaru depuis l'Union européenne, nous respectons le Règlement Général sur la Protection des Données (RGPD) pour garantir vos droits.</p>
         </div>
       </section>
-      
+
       <section className="space-y-4">
         <h3 className="text-xl font-semibold">Vos droits et sécurité</h3>
+
         <div>
           <h4 className="font-medium">Vos droits sur vos données personnelles</h4>
-          <p>Vous avez les droits suivants :</p>
+
+          <p>Vous pouvez demander :</p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Accès</strong> : Consulter les données que nous détenons sur vous via votre compte ou en nous contactant.</li>
-            <li><strong>Rectification</strong> : Mettre à jour vos informations dans l'application ou en nous contactant.</li>
-            <li><strong>Suppression</strong> : Demander la suppression de votre compte et de vos données (sauf obligations légales) via l'application ou par e-mail.</li>
-            <li><strong>Restriction</strong> : Limiter l'utilisation de vos données dans certains cas (par exemple, pendant une vérification).</li>
-            <li><strong>Portabilité</strong> : Obtenir une copie de vos données dans un format structuré (JSON ou CSV).</li>
-            <li><strong>Opposition</strong> : Refuser certaines utilisations, comme les notifications marketing.</li>
+            <li>l'accès à vos données personnelles ;</li>
+            <li>la correction de vos informations ;</li>
+            <li>la suppression de votre compte ;</li>
+            <li>la limitation de certains traitements ;</li>
+            <li>une copie de vos données lorsque cela est possible ;</li>
+            <li>l'opposition à certaines utilisations non essentielles.</li>
           </ul>
-          <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:sprinteragenceit@gmail.com" className="text-blue-600">sprinteragenceit@gmail.com</a></p>
-          
-          <h4 className="font-medium mt-3">Sécurité de vos données personnelles</h4>
-          <p>Nous utilisons des mesures techniques et organisationnelles :</p>
+
+          <p>
+            Pour exercer ces droits, contactez-nous à :{" "}
+            <a href="mailto:contact@kinaru.app" className="text-blue-600">
+              contact@kinaru.app
+            </a>
+          </p>
+
+          <h4 className="font-medium mt-3">
+            Sécurité de vos données personnelles
+          </h4>
+
+          <p>
+            Nous utilisons des mesures techniques et organisationnelles pour
+            protéger vos informations contre l'accès non autorisé, la perte, la
+            modification ou la divulgation.
+          </p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li>Cryptage des données en transit et au repos (via Firebase).</li>
-            <li>Pare-feu et audits réguliers pour détecter les vulnérabilités.</li>
+            <li>cryptage des données en transit ;</li>
+            <li>authentification sécurisée ;</li>
+            <li>contrôle des accès administratifs ;</li>
+            <li>surveillance des activités suspectes ;</li>
+            <li>sécurisation des documents sensibles.</li>
           </ul>
-          <p>Cependant, aucune méthode n'est infaillible. En cas de violation de données, nous vous informerons dans les 72 heures, conformément aux lois applicables (ex. : RGPD), et prendrons des mesures pour limiter les risques.</p>
+
+          <p>
+            Toutefois, aucune méthode de transmission ou de stockage électronique
+            n'est totalement infaillible. En cas d'incident majeur de sécurité,
+            nous prendrons les mesures nécessaires pour limiter les risques et
+            informer les utilisateurs concernés lorsque cela est requis.
+          </p>
         </div>
       </section>
-      
+
       <section className="space-y-4">
         <h3 className="text-xl font-semibold">Informations complémentaires</h3>
+
         <div>
           <h4 className="font-medium">Confidentialité des enfants</h4>
-          <p>Kinaru n'est pas destiné aux enfants de moins de 13 ans.</p>
-          <p>Nous ne collectons pas sciemment de données personnelles d'enfants sans le consentement parental vérifiable. Si vous êtes un parent et pensez que votre enfant nous a fourni des données, contactez-nous pour leur suppression immédiate.</p>
-          
+
+          <p>
+            Kinaru n'est pas destiné aux enfants de moins de 13 ans. Nous ne
+            collectons pas sciemment de données personnelles d'enfants sans le
+            consentement parental vérifiable.
+          </p>
+
           <h4 className="font-medium mt-3">Cookies et technologies similaires</h4>
-          <p>Kinaru n'utilise pas de cookies dans l'application mobile.</p>
-          <p>Nous utilisons des technologies similaires :</p>
+
+          <p>
+            L'application mobile Kinaru n'utilise pas de cookies classiques comme
+            un navigateur web. Toutefois, nous pouvons utiliser des technologies
+            similaires pour :
+          </p>
+
           <ul className="list-disc pl-6 space-y-2">
-            <li>Firebase Analytics : Pour collecter des données d'utilisation (pages visitées, erreurs d'application).</li>
-            <li>Identifiants d'appareil : Pour assurer la sécurité et personnaliser votre expérience.</li>
+            <li>analyser l'utilisation de l'application ;</li>
+            <li>améliorer la performance ;</li>
+            <li>détecter les erreurs ;</li>
+            <li>renforcer la sécurité.</li>
           </ul>
-          <p>Vous pouvez désactiver la collecte de données analytiques dans les paramètres de votre appareil ou via les options de l'application (si disponibles).</p>
-          
-          <h4 className="font-medium mt-3">Modifications de cette politique</h4>
-          <p>Nous mettrons à jour cette politique si nécessaire. Les changements seront publiés ici avec une nouvelle date de "Dernière mise à jour".</p>
-          <p>Pour les modifications importantes (ex. : nouvelle collecte de données), nous vous informerons par e-mail ou via une notification dans l'application au moins 7 jours avant leur entrée en vigueur.</p>
+
+          <h4 className="font-medium mt-3">
+            Modifications de cette politique
+          </h4>
+
+          <p>
+            Nous pouvons mettre à jour cette politique de confidentialité lorsque
+            cela est nécessaire. Les changements seront publiés sur cette page
+            avec une nouvelle date de mise à jour.
+          </p>
+
+          <p>
+            En cas de modification importante, nous pourrons vous informer par
+            notification, e-mail ou message dans l'application.
+          </p>
         </div>
       </section>
-      
+
       <section className="space-y-4">
         <h3 className="text-xl font-semibold">Contactez-nous</h3>
+
         <div>
-          <p>Pour toute question, demande ou préoccupation concernant cette politique ou vos données :</p>
+          <p>
+            Pour toute question, demande ou préoccupation concernant cette
+            politique ou vos données :
+          </p>
+
           <ul className="list-none space-y-1">
-            <li><strong>Email</strong> : <a href="mailto:sprinteragenceit@gmail.com" className="text-blue-600">sprinteragenceit@gmail.com</a></li>
-            <li><strong>Site web</strong> : <a href="https://www.kinaru.app/contact" className="text-blue-600">https://www.kinaru.app/contact</a></li>
-            <li><strong>Adresse physique</strong> : Sprinter IT, Douala, Cameroun</li>
+            <li>
+              <strong>Email</strong> :{" "}
+              <a href="mailto:contact@kinaru.app" className="text-blue-600">
+                contact@kinaru.app
+              </a>
+            </li>
+
+            <li>
+              <strong>Site web</strong> :{" "}
+              <a
+                href="https://www.kinaru.app/contact"
+                className="text-blue-600"
+              >
+                https://www.kinaru.app/contact
+              </a>
+            </li>
+
+            <li>
+              <strong>Adresse physique</strong> : Kinaru, Douala, Cameroun
+            </li>
           </ul>
         </div>
       </section>
