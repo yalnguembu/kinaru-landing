@@ -1,17 +1,17 @@
-import {FaCalendar, FaClock, FaDownload} from "react-icons/fa6";
-import {FaHistory} from "react-icons/fa";
+import { FaCalendar, FaClock, FaDownload, FaFileSignature } from "react-icons/fa6";
+import { FaHistory } from "react-icons/fa";
 
 export const avatars = [
-    '/assets/images/avatars/avatar-1.png',
-    '/assets/images/avatars/avatar-2.png',
-    '/assets/images/avatars/avatar-3.png'
+    '/assets/images/avatars/avatar-1.jpg',
+    '/assets/images/avatars/avatar-2.jpg',
+    '/assets/images/avatars/avatar-3.jpg'
 ]
 
 export const services = [
     {
         tag: 'Recherche de biens',
         title: 'Recherche de biens immobiliers',
-        image: "/assets/images/services/recherche_immobilieres.png",
+        image: "/assets/images/services/r-immo.png",
         icon: <FaCalendar />,
         description: "Découvrez un large éventail de biens immobiliers disponibles " +
             "à la location ou à la vente, que ce soit un appartement " +
@@ -26,7 +26,7 @@ export const services = [
     {
         tag: 'Gestion locative',
         title: 'Gerez facilement vos bien en ligne.',
-        image: "/assets/images/services/gestion_immobiliere.png",
+        image: "/assets/images/services/g-immo.png",
         icon: <FaClock />,
         description: "De la publication d'annonces à la gestion des demandes " +
             "des locataires, tout est centralisé sur une seule plateforme.",
@@ -50,14 +50,12 @@ export const services = [
     //     className: "flex-col-reverse md:flex-row-reverse"
     // },
     {
-        tag: 'Maintenance et Conciergerie',
-        title: "Une service d'assistance a votre écoute",
-        image: "/assets/images/about/abtslide_2.png",
-        icon: <FaHistory />,
-        description: "Besoin d'une réparation rapide ou de conseils pour un aménagement ? " +
-                    "Avec Kinaru, vous pouvez réserver des services de maintenance ou de " +
-                    "conciergerie directement depuis la plateforme.",
-        actionText: "Essayez Maintenant",
+        tag: 'Contrat de Bail',
+        title: "Simplifiez la gestion de vos contrats de location",
+        image: "/assets/images/services/c-immo.png",
+        icon: <FaFileSignature />,
+        description: "Kinaru permet aux bailleurs, agences immobilières de gérer plus facilement les contrats de bail à travers une expérience moderne, centralisée et pensée pour les réalités du marché immobilier camerounais.",
+        actionText: "Découvrir",
         actionUrl: "#",
         data: [],
         className: "flex-col-reverse md:flex-row"
@@ -65,7 +63,7 @@ export const services = [
     {
         tag: 'Visite virtuelle',
         title: "Visites virtuelles en réalité augmentée",
-        image: "/assets/images/services/visite_virtuelle.png",
+        image: "/assets/images/services/vr-immo.png",
         icon: <FaHistory />,
         description: "Plongez dans l'avenir de la recherche imobilière, explorez " +
             "les propriétés à 360 degré grace à nos visites virtuelles immersives." +

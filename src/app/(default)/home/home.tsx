@@ -61,7 +61,7 @@ export default function HomeContent() {
               height={64}
             />
           </div>
-          <span className="font-bold text-xl">12M+ Utilisateurs actifs</span>
+          <span className="font-bold text-xl">200+ Utilisateurs actifs</span>
           <span className="text-lg">
             La meilleure plateforme mobile de gestion <br /> immobilière en Afrique
           </span>

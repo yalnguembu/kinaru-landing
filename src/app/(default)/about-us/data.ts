@@ -12,8 +12,8 @@ export const firstCarouselImages: string[] = [
 export const statsValues = [
     {number: 2300, start: 1500, time: 10, step: 3, name: 'Revues', letter: '+'},
     {number: 1, step: 3, name: 'Pays', letter: '+'},
-    {number: 17, name: 'Téléchargements', letter: 'M+'},
-    {number: 1, name: 'Abonnements', letter: 'M+'}
+    {number: 1, name: 'Téléchargements', letter: 'k+'},
+    {number: 1, name: 'Abonnements', letter: 'k+'}
 ]
 
 export const valuesItem = [
