@@ -41,7 +41,7 @@ export default function CookiesPolicyPage() {
         <section>
           <h2 className="text-2xl font-semibold mb-3">Introduction</h2>
           <p>
-            Cette politique explique comment Sprinter IT utilise les cookies et technologies similaires 
+            Cette politique explique comment Kinaru utilise les cookies et technologies similaires 
             dans le cadre de son application mobile Kinaru. Elle vise à vous informer sur les données 
             collectées automatiquement lors de l'utilisation de notre Service et sur vos droits concernant 
             ces technologies.
@@ -206,9 +206,9 @@ export default function CookiesPolicyPage() {
             n'hésitez pas à nous contacter :
           </p>
           <ul className="mt-3 space-y-2">
-            <li><strong>Email</strong> : <a href={`mailto:${CONTACT_MAIL}`} className="text-primary hover:underline">sprinteragenceit@gmail.com</a></li>
+            <li><strong>Email</strong> : <a href={`mailto:${CONTACT_MAIL}`} className="text-primary hover:underline">kinaruofficiel@gmail.com</a></li>
             <li><strong>Site web</strong> : <a href="/contact" className="text-primary hover:underline">https://www.kinaru.app/contact</a></li>
-            <li><strong>Adresse</strong> : Sprinter IT, {LOCATION}</li>
+            <li><strong>Adresse</strong> : Kinaru, {LOCATION}</li>
           </ul>
         </section>
       </div>

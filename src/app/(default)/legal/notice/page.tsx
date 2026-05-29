@@ -43,9 +43,9 @@ export default function LegalNoticeScreen() {
           <div>
             <p>Le Service Kinaru est édité par :</p>
             <ul className="list-none space-y-1">
-              <li><strong>Société :</strong> Sprinter IT</li>
+              <li><strong>Société :</strong> Kinaru</li>
               <li><strong>Adresse :</strong> Douala, Cameroun</li>
-              <li><strong>Email :</strong> <a href={`mailto:${CONTACT_MAIL}`} className="text-blue-600">sprinteragenceit@gmail.com</a></li>
+              <li><strong>Email :</strong> <a href={`mailto:${CONTACT_MAIL}`} className="text-blue-600">kinaruofficiel@gmail.com</a></li>
               <li><strong>Site web :</strong> <a href="https://www.kinaru.app" className="text-blue-600">https://www.kinaru.app</a></li>
             </ul>
           </div>
@@ -79,12 +79,12 @@ export default function LegalNoticeScreen() {
               Le contenu du Service Kinaru (textes, images, logos, etc.) est protégé par le droit d'auteur 
               et autres droits de propriété intellectuelle. Toute reproduction ou représentation, totale ou partielle, 
               du Service ou de l'un quelconque des éléments qui le composent, par quelque procédé que ce soit, 
-              sans l'autorisation expresse de Sprinter IT, est interdite et constituerait une contrefaçon.
+              sans l'autorisation expresse de Kinaru, est interdite et constituerait une contrefaçon.
             </p>
             <p className="mt-2">
-              Les marques et logos figurant sur le Service sont des marques déposées de Sprinter IT ou de ses partenaires.
+              Les marques et logos figurant sur le Service sont des marques déposées de Kinaru ou de ses partenaires.
               Toute reproduction ou représentation, totale ou partielle, seule ou intégrée à d'autres éléments, 
-              sans l'autorisation préalable et écrite de Sprinter IT est strictement interdite.
+              sans l'autorisation préalable et écrite de Kinaru est strictement interdite.
             </p>
           </div>
         </section>

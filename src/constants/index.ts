@@ -1,5 +1,5 @@
 export const PHONE = "+237 681 41 86 74";
-export const CONTACT_MAIL = "sprinteragenceit@gmail.com";
+export const CONTACT_MAIL = "kinaruofficiel@gmail.com";
 export const LOCATION = "Douala, Cameroun";
 
 // ── Kinaru (visiteurs & locataires) ──────────────────────────────────────────

@@ -33,7 +33,7 @@ export function fetchQuestions(): Promise<Faq[]>
         },
         {
             question: "Que faire si j'ai un problème avec un bailleur ou un locataire ?",
-            answer: "Kinaru dispose d'un système de signalement intégré. Depuis le profil concerné ou la conversation, appuyez sur « Signaler » et décrivez le problème. Notre équipe examine chaque signalement sous 48h. En cas d'urgence, vous pouvez aussi nous contacter directement par email à sprinteragenceit@gmail.com ou par téléphone au +237 681 41 86 74."
+            answer: "Kinaru dispose d'un système de signalement intégré. Depuis le profil concerné ou la conversation, appuyez sur « Signaler » et décrivez le problème. Notre équipe examine chaque signalement sous 48h. En cas d'urgence, vous pouvez aussi nous contacter directement par email à kinaruofficiel@gmail.com ou par téléphone au +237 681 41 86 74."
         },
         {
             question: "Puis-je utiliser Kinaru depuis une autre ville que Douala ?",
